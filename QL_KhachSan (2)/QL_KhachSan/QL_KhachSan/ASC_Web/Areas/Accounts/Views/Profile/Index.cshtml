@@ -1,0 +1,376 @@
+﻿@model ASC_Web.Areas.Accounts.Models.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Hồ sơ của tôi";
+    Layout = "_SecureLayout"; // Layout này đã được cập nhật ở trên
+}
+
+<style>
+    .profile-card {
+        margin-top: 20px;
+        border-radius: 8px; /* Đồng bộ bo góc */
+    }
+
+    .profile-avatar-container {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 15px; /* Thêm chút padding top */
+    }
+
+    .profile-avatar {
+        width: 140px; /* Có thể điều chỉnh */
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #e0e0e0; /* grey lighten-2 */
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
+
+        .profile-avatar:hover {
+            border-color: #00796b; /* teal darken-2, màu primary */
+        }
+
+    .profile-card .card-title { /* Tiêu đề tên người dùng */
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 1.8rem; /* Cỡ chữ lớn hơn */
+    }
+
+    .profile-card .profile-email-display { /* Class mới cho email dưới tên */
+        font-size: 1rem;
+        color: #757575; /* grey darken-1 */
+        margin-bottom: 20px;
+    }
+
+
+    .profile-info-section-title { /* Class mới cho tiêu đề "Thông tin chi tiết" */
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #00796b; /* teal darken-2 */
+        padding-bottom: 5px;
+        border-bottom: 2px solid #00796b;
+        display: inline-block;
+    }
+
+    .profile-info-row {
+        padding: 10px 0; /* Giảm padding một chút */
+        border-bottom: 1px solid #f0f0f0;
+        display: flex; /* Sử dụng flex để căn chỉnh label và value */
+        align-items: center;
+    }
+
+        .profile-info-row:last-child {
+            border-bottom: none;
+        }
+
+    .profile-info-label {
+        font-weight: 500;
+        color: #555;
+        display: flex; /* Căn icon và text */
+        align-items: center;
+        font-size: 0.95rem;
+    }
+
+        .profile-info-label .material-icons {
+            margin-right: 10px; /* Khoảng cách icon và text */
+            font-size: 1.1rem; /* Kích thước icon */
+            color: #757575; /* grey darken-1 */
+        }
+
+    .profile-info-value {
+        color: #333;
+        font-size: 0.95rem;
+    }
+
+        .profile-info-value .badge { /* Badge xác nhận email */
+            vertical-align: middle;
+            margin-left: 8px;
+            font-size: 0.75rem;
+            padding: 2px 8px; /* Thu nhỏ padding badge */
+            font-weight: 500;
+            border-radius: 4px;
+        }
+
+            .profile-info-value .badge .material-icons {
+                font-size: 1rem;
+                margin-right: 3px;
+                vertical-align: text-bottom;
+            }
+
+
+    .role-chip {
+        margin: 3px 4px 3px 0; /* Điều chỉnh margin */
+        font-size: 0.85rem;
+        padding: 5px 10px; /* Điều chỉnh padding chip */
+        background-color: #e0f2f1 !important; /* teal lighten-5 */
+        color: #00796b !important; /* teal darken-2 */
+        font-weight: 500;
+    }
+
+    /* Modal styling */
+    .modal .modal-content h4 {
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #00796b; /* teal darken-2 */
+    }
+
+    .modal .file-field .btn { /* Nút chọn file */
+        background-color: #26a69a; /* teal lighten-1 */
+    }
+
+        .modal .file-field .btn:hover {
+            background-color: #00897b; /* teal */
+        }
+
+    #avatarPreview {
+        width: 120px; /* Đồng bộ kích thước preview */
+        height: 120px;
+        margin-top: 15px;
+        border-radius: 50%;
+        object-fit: cover; /* Đảm bảo ảnh không bị méo */
+        border: 2px solid #e0e0e0; /* Viền nhẹ */
+    }
+
+    .modal .modal-footer .btn.indigo.darken-1 { /* Nút Lưu thay đổi */
+        background-color: #00796b !important; /* teal darken-2 */
+    }
+
+        .modal .modal-footer .btn.indigo.darken-1:hover {
+            background-color: #00695c !important; /* teal darken-3 */
+        }
+
+    /* TempData Message Styling */
+    .card-panel.padding-10px { /* class này bạn dùng cho TempData */
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+    }
+
+        .card-panel.padding-10px .material-icons.left {
+            margin-right: 8px;
+        }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="card profile-card z-depth-2">
+                <div class="card-content">
+                    <div class="profile-avatar-container">
+                        <img src="@Model.AvatarUrl" alt="Ảnh đại diện" class="profile-avatar tooltipped"
+                             data-position="bottom" data-tooltip="Nhấn để thay đổi ảnh đại diện"
+                             onclick="$('#editProfileModal').modal('open');" @* Bỏ trigger tab nếu không cần thiết khi mở modal *@
+                             onerror="this.onerror=null; this.src='/images/default-user-avatar.png';" />
+                        <h5 class="card-title center-align blue-grey-text text-darken-3">
+                            @Model.UserName
+                        </h5>
+                        <p class="center-align profile-email-display">@Model.Email</p>
+                    </div>
+
+                    <div class="divider" style="margin: 20px 0;"></div>
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="card-panel teal lighten-2 white-text padding-10px z-depth-0" style="border-radius:5px;">
+                            @* Giữ màu teal lighten-2 cho success *@
+                            <i class="material-icons left tiny">check_circle</i>@TempData["SuccessMessage"]
+                        </div>
+                    }
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="card-panel red lighten-2 white-text padding-10px z-depth-0" style="border-radius:5px;">
+                            @* Giữ màu red lighten-2 cho error *@
+                            <i class="material-icons left tiny">error_outline</i>@TempData["ErrorMessage"]
+                        </div>
+                    }
+                    @if (TempData["InfoMessage"] != null) @* Thêm cho InfoMessage *@
+                    {
+                        <div class="card-panel blue lighten-2 white-text padding-10px z-depth-0" style="border-radius:5px;">
+                            <i class="material-icons left tiny">info_outline</i>@TempData["InfoMessage"]
+                        </div>
+                    }
+                    @if (!ViewData.ModelState.IsValid && ViewData.ModelState.Values.Any(v => v.Errors.Any(e => !string.IsNullOrEmpty(e.ErrorMessage))))
+                    {
+                        <div class="card-panel red lighten-4 red-text text-darken-4 padding-10px z-depth-0" style="margin-bottom:20px; border-radius:5px;">
+                            <span style="font-weight: bold;">Vui lòng sửa các lỗi sau:</span>
+                            <ul style="margin-left: 20px; list-style-type: disc; margin-top:5px;">
+                                @foreach (var modelStateKey in ViewData.ModelState.Keys)
+                                {
+                                    var modelStateVal = ViewData.ModelState[modelStateKey];
+                                    foreach (var error in modelStateVal.Errors)
+                                    {
+                                        if (!string.IsNullOrEmpty(error.ErrorMessage))
+                                        {
+                                            <li>@error.ErrorMessage</li>
+                                        }
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <h6 class="profile-info-section-title">Thông tin chi tiết</h6>
+
+                    <div class="row profile-info-row valign-wrapper">
+                        @* Thêm valign-wrapper cho cả row *@
+                        <div class="col s5 m4 profile-info-label"><i class="material-icons tiny left">person_outline</i>Tên đăng nhập</div>
+                        <div class="col s7 m8 profile-info-value">@Html.DisplayFor(model => model.UserName)</div>
+                    </div>
+                    <div class="row profile-info-row valign-wrapper">
+                        <div class="col s5 m4 profile-info-label"><i class="material-icons tiny left">email</i>Email</div>
+                        <div class="col s7 m8 profile-info-value">
+                            @Html.DisplayFor(model => model.Email)
+                            @if (Model.EmailConfirmed)
+                            {
+                                <span class="badge green lighten-1 white-text tooltipped" data-badge-caption="" data-position="top" data-tooltip="Email đã xác nhận"><i class="material-icons">verified_user</i>Đã XN</span>
+                            }
+                            else
+                            {
+                                <span class="badge orange lighten-1 white-text tooltipped" data-badge-caption="" data-position="top" data-tooltip="Email chưa xác nhận"><i class="material-icons">warning</i>Chưa XN</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="row profile-info-row valign-wrapper">
+                        <div class="col s5 m4 profile-info-label"><i class="material-icons tiny left">phone</i>Số điện thoại</div>
+                        <div class="col s7 m8 profile-info-value">@(Model.PhoneNumber ?? "Chưa cập nhật")</div>
+                    </div>
+                    <div class="row profile-info-row valign-wrapper">
+                        <div class="col s5 m4 profile-info-label"><i class="material-icons tiny left">supervisor_account</i>Vai trò</div>
+                        <div class="col s7 m8 profile-info-value">
+                            @if (Model.Roles != null && Model.Roles.Any())
+                            {
+                                foreach (var role in Model.Roles)
+                                {
+                                    <div class="chip role-chip">@role</div>
+                                }
+                            }
+                            else
+                            {
+                                <span class="grey-text">Không có vai trò nào.</span>
+                            }
+                        </div>
+                    </div>
+                    @if (Model.LockoutEnd.HasValue && Model.LockoutEnd.Value > DateTimeOffset.UtcNow)
+                    {
+                        <div class="row profile-info-row valign-wrapper"><div class="col s5 m4 profile-info-label red-text text-lighten-1"><i class="material-icons tiny left">lock_outline</i>Tài khoản bị khóa</div><div class="col s7 m8 profile-info-value red-text text-lighten-1">Đến: @Model.LockoutEnd.Value.ToString("dd/MM/yyyy HH:mm:ss")</div></div>
+                    }
+
+                </div>
+                <div class="card-action right-align" style="border-top: 1px solid #eee !important; padding:15px 24px;">
+                    <a class="waves-effect waves-light btn orange darken-1 modal-trigger" href="#editProfileModal"><i class="material-icons left">edit</i>Chỉnh sửa Hồ sơ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Modal không thay đổi nhiều về HTML, chỉ CSS đã được cập nhật ở trên *@
+<div id="editProfileModal" class="modal modal-fixed-footer" style="max-height: 85%;">
+    <form asp-action="EditProfile" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="modal-content">
+            <h4 class="blue-grey-text text-darken-2">Chỉnh sửa Hồ sơ</h4>
+            <div class="divider"></div>
+
+            <div class="row" style="margin-top:20px;">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input asp-for="UserName" id="modal_UserName" class="validate" />
+                    <label asp-for="UserName">Tên đăng nhập</label>
+                    <span asp-validation-for="UserName" class="helper-text" data-error="Vui lòng nhập tên đăng nhập."></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input asp-for="PhoneNumber" id="modal_PhoneNumber" type="tel" class="validate" />
+                    <label asp-for="PhoneNumber">Số điện thoại</label>
+                    <span asp-validation-for="PhoneNumber" class="helper-text" data-error="Số điện thoại không hợp lệ."></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <label asp-for="AvatarFile" style="font-size:1rem; color:#757575; display:block; margin-bottom: 5px;">Ảnh đại diện mới</label>
+                    <div class="file-field input-field" style="margin-top:0;">
+                        <div class="btn waves-effect waves-light">
+                            @* Màu đã được style trong CSS *@
+                            <span><i class="material-icons left tiny">attach_file</i>Chọn Ảnh</span>
+                            <input asp-for="AvatarFile" type="file" accept="image/*" onchange="previewAvatar(event)">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Tải lên ảnh mới (tối đa 2MB)">
+                        </div>
+                    </div>
+                    <span asp-validation-for="AvatarFile" class="helper-text red-text"></span>
+                    <div class="center-align" style="margin-top:10px;">
+                        <img id="avatarPreview" src="@Model.AvatarUrl" alt="Xem trước ảnh"
+                             onerror="this.style.display='none'; this.src='';" />
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" asp-for="Email" />
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn waves-effect waves-light indigo darken-1">
+                <i class="material-icons left">save</i>Lưu thay đổi
+            </button>
+            <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Hủy</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({ exitDelay: 50 });
+            $('.modal').modal();
+            M.updateTextFields();
+
+            setTimeout(function () {
+                $('.card-panel.teal, .card-panel.red, .card-panel.blue').fadeOut('slow', function () { $(this).remove(); });
+            }, 3500);
+        });
+
+        function previewAvatar(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('avatarPreview');
+                output.src = reader.result;
+                output.style.display = 'block'; /* Hiển thị img */
+            };
+            if (event.target.files[0]) {
+                reader.readAsDataURL(event.target.files[0]);
+            } else { // Nếu người dùng hủy chọn file
+                var output = document.getElementById('avatarPreview');
+                // Hiển thị lại ảnh đại diện hiện tại của người dùng nếu có, nếu không thì ẩn đi
+                var currentAvatar = "@Model.AvatarUrl";
+                if (currentAvatar && !currentAvatar.endsWith('default-user-avatar.png')) {
+                    output.src = currentAvatar;
+                    output.style.display = 'block';
+                } else {
+                    output.src = ''; // Xóa src
+                    output.style.display = 'none'; // Ẩn nếu không có file hoặc là ảnh default
+                }
+            }
+        }
+
+        @if (!ViewData.ModelState.IsValid &&
+            (ViewData.ModelState.ContainsKey("UserName") ||
+             ViewData.ModelState.ContainsKey("PhoneNumber") ||
+             ViewData.ModelState.ContainsKey("AvatarFile")))
+        {
+            <text>
+                $(document).ready(function(){
+                    $('#editProfileModal').modal('open');
+                    M.updateTextFields();
+                });
+            </text>
+        }
+    </script>
+}

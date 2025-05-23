@@ -1,0 +1,465 @@
+﻿@using ASC.Model.Models
+@model IEnumerable<ASC_Web.Areas.ServiceRequests.Models.ServiceRequestDetailsViewModel>
+
+@{
+    ViewData["Title"] = "Yêu cầu Dịch vụ Chờ Xác nhận";
+    Layout = "_SecureLayout";
+}
+
+<style>
+    /* --- General Page & Card Structure --- */
+    .card .card-content .card-title-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .card .card-content .card-title-section .card-title {
+            margin: 0;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .card .card-content .card-title-section .card-title .material-icons {
+                margin-right: 10px;
+                font-size: 1.9rem;
+            }
+
+    .page-description {
+        color: #546e7a; /* blue-grey-text text-darken-1 */
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    /* --- Table Specific Styles --- */
+    .responsive-table-wrapper {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 15px;
+        /* border: 1px solid #e0e0e0; border-radius: 4px; */ /* Card sẽ bao bọc */
+    }
+
+    .responsive-table {
+        width: 100%;
+    }
+
+    /* Custom Table Header for Pending Items */
+    #tblPendingRequests thead.pending-header {
+        background-color: #fff59d; /* yellow lighten-3 - màu vàng nhạt hơn, dễ chịu hơn */
+        border-bottom: 2px solid #fbc02d; /* yellow darken-2 */
+    }
+
+        #tblPendingRequests thead.pending-header th {
+            color: #5d4037; /* brown darken-2 */
+            font-weight: 500;
+            padding: 12px 10px;
+        }
+
+    .responsive-table th, /* General th styling if not pending-header */
+    .responsive-table td {
+        vertical-align: middle;
+        padding: 10px 8px;
+        font-size: 0.9rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .responsive-table th {
+        font-weight: 500;
+        color: #37474f;
+    }
+
+
+    /* Specific column styling */
+    #tblPendingRequests td.guest-email-col {
+        font-weight: 500;
+        color: #00796b; /* teal darken-2 */
+    }
+
+    /* Status Box (sử dụng lại từ các trang trước) */
+    .status-box {
+        padding: 4px 10px;
+        border-radius: 3px;
+        color: white !important;
+        text-align: center;
+        line-height: 1.3;
+        display: inline-block;
+        min-width: 120px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        white-space: nowrap;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    .status-box-pending {
+        background-color: #ffa000 !important;
+        color: #000 !important;
+    }
+    /* Amber darken-2 - Nổi bật hơn cho pending */
+
+
+    /* Action Buttons in Table */
+    #tblPendingRequests th.actions-header {
+        min-width: 150px; /* Cho 3 nút */
+        text-align: center !important;
+    }
+
+    #tblPendingRequests td.actions-cell {
+        text-align: center !important;
+        white-space: nowrap;
+    }
+
+    #tblPendingRequests .actions-cell .btn-floating.btn-small {
+        margin: 0 3px;
+    }
+    /* Giữ lại custom color cho buttons nếu muốn, hoặc dùng màu Materialize chuẩn */
+    .btn-details-staff {
+        background-color: #42a5f5 !important;
+    }
+    /* blue lighten-1 */
+    .btn-approve-staff {
+        background-color: #66bb6a !important;
+    }
+    /* green lighten-1 */
+    .btn-reject-staff {
+        background-color: #ef5350 !important;
+    }
+    /* red lighten-1 */
+
+
+    /* Modal Styling */
+    .modal .modal-content h5 { /* Tiêu đề modal */
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #37474f;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+        .modal .modal-content h5 .material-icons {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+
+    .modal .modal-footer .btn-flat {
+        margin-left: 8px;
+    }
+
+    .modal .input-field textarea {
+        min-height: 70px;
+    }
+
+    .modal .modal-footer {
+        padding: 10px 24px;
+    }
+    /* Giảm padding footer modal */
+
+
+    /* "No Requests" Panel Styling */
+    .no-requests-panel {
+        padding: 30px 20px !important;
+        margin-top: 20px;
+        border-radius: 4px;
+        background-color: #f5f5f5; /* grey lighten-4 */
+    }
+
+        .no-requests-panel .material-icons.large {
+            font-size: 3.5rem;
+            color: #9e9e9e;
+        }
+        /* grey */
+        .no-requests-panel .flow-text {
+            font-size: 1.2rem;
+            margin: 10px 0 5px 0;
+            color: #616161;
+        }
+
+    /* DataTable controls styling */
+    div.dataTables_wrapper div.dataTables_length select,
+    div.dataTables_wrapper div.dataTables_filter input[type="search"] {
+        border: 1px solid #9e9e9e;
+        border-radius: 3px;
+        height: auto;
+        padding: 6px 8px;
+    }
+
+    div.dataTables_wrapper div.dataTables_length select {
+        width: auto;
+        display: inline-block;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input[type="search"] {
+        margin-left: 0.5em;
+    }
+
+    .dataTables_info, .dataTables_paginate {
+        padding-top: 1em;
+    }
+
+    /* TempData panels */
+    .tempdata-panel {
+        margin: 15px 0;
+        padding: 12px 15px;
+        border-left-width: 4px;
+        border-left-style: solid;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .tempdata-panel .material-icons {
+            margin-right: 10px;
+        }
+
+        .tempdata-panel.green {
+            border-color: #388e3c;
+            background-color: #e8f5e9 !important;
+            color: #2e7d32 !important;
+        }
+
+        .tempdata-panel.red {
+            border-color: #c62828;
+            background-color: #ffebee !important;
+            color: #c62828 !important;
+        }
+
+    /* Responsive adjustments */
+    @@media (max-width: 768px) {
+        .responsive-table th, .responsive-table td {
+            font-size: 0.85rem;
+            padding: 8px 5px;
+            white-space: normal;
+        }
+
+        #tblPendingRequests th.actions-header {
+            min-width: 130px;
+        }
+
+        .card .card-content .card-title-section .card-title {
+            font-size: 1.4rem;
+        }
+
+            .card .card-content .card-title-section .card-title .material-icons {
+                font-size: 1.7rem;
+            }
+    }
+
+</style>
+
+<div class="container" style="margin-top:25px; width: 95%; max-width: 1800px;">
+    <h4 class="blue-grey-text text-darken-3 page-header-title">@ViewData["Title"]</h4>
+    <p class="page-description">Danh sách các yêu cầu dịch vụ từ khách hàng đang chờ được nhân viên xử lý.</p>
+    <div class="divider" style="margin-bottom: 25px;"></div>
+
+    <div class="card z-depth-1">
+        <div class="card-content">
+            <div class="card-title-section">
+                <span class="card-title grey-text text-darken-2">
+                    <i class="material-icons">hourglass_top</i>Yêu cầu cần xử lý
+                </span>
+                @* Nút refresh hoặc filter có thể thêm ở đây nếu cần *@
+            </div>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="card-panel green lighten-5 green-text text-darken-4 tempdata-panel green" onclick="this.style.display='none';">
+                    <i class="material-icons">check_circle</i>@Html.Raw(TempData["SuccessMessage"])
+                </div>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="card-panel red lighten-5 red-text text-darken-4 tempdata-panel red" onclick="this.style.display='none';">
+                    <i class="material-icons">error_outline</i>@Html.Raw(TempData["ErrorMessage"])
+                </div>
+            }
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="responsive-table-wrapper">
+                    <table class="highlight responsive-table striped" id="tblPendingRequests">
+                        <thead class="pending-header">
+                            @* Giữ lại header vàng đặc trưng cho pending *@
+                            <tr>
+                                <th class="guest-email-col">Email Khách hàng</th>
+                                <th>Loại Dịch vụ</th>
+                                <th>Chi tiết</th>
+                                <th>Ngày Yêu cầu</th>
+                                <th>Ngày Mong muốn</th>
+                                <th class="center-align">Trạng thái</th>
+                                <th class="center-align actions-header">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                var rejectModalId = $"rejectModal_{item.Id}";
+                                var approveModalId = $"approveModal_{item.Id}";
+
+                                <tr>
+                                    <td class="guest-email-col">@Html.DisplayFor(modelItem => item.GuestEmail)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ServiceKeyName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.ServiceValueName)</td>
+                                    <td>@item.CreatedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>
+                                        @item.RequestedDate.ToString("dd/MM/yyyy")
+                                        @if (item.RequestedEndDate.HasValue)
+                                        {
+                                            <text> - @item.RequestedEndDate.Value.ToString("dd/MM/yyyy")</text>
+                                        }
+                                    </td>
+                                    <td class="center-align">
+                                        @* Tất cả đều là Pending Confirmation, sử dụng status-box cho nhất quán *@
+                                        <div class="status-box status-box-pending tooltipped" data-position="top" data-tooltip="Chờ xác nhận">Chờ xác nhận</div>
+                                    </td>
+                                    <td class="center-align actions-cell">
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn-floating btn-small waves-effect waves-light btn-details-staff tooltipped" data-position="top" data-tooltip="Xem Chi tiết Yêu cầu">
+                                            <i class="material-icons">visibility</i>
+                                        </a>
+                                        <a href="#@approveModalId" class="btn-floating btn-small waves-effect waves-light btn-approve-staff tooltipped modal-trigger" data-position="top" data-tooltip="Chấp nhận Yêu cầu">
+                                            <i class="material-icons">check_circle_outline</i>
+                                        </a>
+                                        <a href="#@rejectModalId" class="btn-floating btn-small waves-effect waves-light btn-reject-staff tooltipped modal-trigger" data-position="top" data-tooltip="Từ chối Yêu cầu">
+                                            <i class="material-icons">highlight_off</i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <div id="@approveModalId" class="modal modal-fixed-footer">
+                                    <form asp-action="Approve" asp-route-id="@item.Id" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="modal-content">
+                                            <h5><i class="material-icons green-text text-darken-1">check_circle</i>Xác nhận Chấp nhận Yêu cầu</h5>
+                                            <p>Bạn có muốn thêm ghi chú cho việc chấp nhận yêu cầu dịch vụ này không?</p>
+                                            <div class="divider" style="margin:15px 0;"></div>
+                                            <p><strong>Khách hàng:</strong> <span class="blue-grey-text text-darken-2">@item.GuestEmail</span></p>
+                                            <p><strong>Dịch vụ:</strong> <span class="blue-grey-text text-darken-2">@item.ServiceKeyName - @item.ServiceValueName</span></p>
+                                            <p><strong>Yêu cầu ngày:</strong> <span class="blue-grey-text text-darken-2">@item.RequestedDate.ToString("dd/MM/yyyy")</span></p>
+
+                                            <div class="input-field" style="margin-top:20px;">
+                                                <i class="material-icons prefix">speaker_notes</i>
+                                                <textarea id="staffRemarksApprove_@item.Id" name="staffRemarks" class="materialize-textarea" data-length="200"></textarea>
+                                                <label for="staffRemarksApprove_@item.Id">Ghi chú của nhân viên (tùy chọn)</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="modal-close waves-effect waves-grey btn-flat tooltipped" data-tooltip="Đóng cửa sổ này">Hủy</button>
+                                            <button type="submit" class="btn waves-effect waves-light green darken-1 tooltipped" data-tooltip="Xác nhận và gửi thông báo">Chấp nhận</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="@rejectModalId" class="modal modal-fixed-footer">
+                                    <form asp-action="Reject" asp-route-id="@item.Id" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <div class="modal-content">
+                                            <h5><i class="material-icons red-text text-darken-1">cancel</i>Xác nhận Từ chối Yêu cầu</h5>
+                                            <p>Vui lòng nhập lý do từ chối yêu cầu dịch vụ này.</p>
+                                            <div class="divider" style="margin:15px 0;"></div>
+                                            <p><strong>Khách hàng:</strong> <span class="blue-grey-text text-darken-2">@item.GuestEmail</span></p>
+                                            <p><strong>Dịch vụ:</strong> <span class="blue-grey-text text-darken-2">@item.ServiceKeyName - @item.ServiceValueName</span></p>
+
+                                            <div class="input-field" style="margin-top:20px;">
+                                                <i class="material-icons prefix">speaker_notes</i>
+                                                <textarea id="staffRemarksReject_@item.Id" name="staffRemarks" class="materialize-textarea validate" required data-length="200"></textarea>
+                                                <label for="staffRemarksReject_@item.Id">Lý do từ chối <span class="red-text text-accent-4">*</span></label>
+                                                <span class="helper-text" data-error="Lý do từ chối không được để trống." data-success=""></span>
+                                            </div>
+                                            @if (TempData[$"ErrorMessageReject_{item.Id}"] != null)
+                                            {
+                                                <p class="red-text text-darken-2" style="margin-top:10px; font-size:0.9rem;"><i class="material-icons tiny left">warning</i>@TempData[$"ErrorMessageReject_{item.Id}"]</p>
+                                            }
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="modal-close waves-effect waves-grey btn-flat tooltipped" data-tooltip="Đóng cửa sổ này">Hủy</button>
+                                            <button type="submit" class="btn waves-effect waves-light red darken-1 tooltipped" data-tooltip="Xác nhận từ chối và gửi thông báo">Từ chối Yêu cầu</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="center-align no-requests-panel">
+                    <i class="material-icons large">hourglass_empty</i>
+                    <p class="flow-text">Hiện không có yêu cầu nào đang chờ xác nhận.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            M.AutoInit(); // Khởi tạo modals, tooltips, character counter, etc.
+            // Hoặc khởi tạo riêng lẻ nếu cần:
+            // $('.modal').modal();
+            // $('.tooltipped').tooltip({ exitDelay: 50 });
+            // $('textarea.materialize-textarea').characterCounter();
+            // M.textareaAutoResize($('textarea.materialize-textarea')); // Gọi sau characterCounter nếu cần
+
+
+            if ($('#tblPendingRequests tbody tr').length > 0) {
+                $('#tblPendingRequests').DataTable({
+                    'pageLength': 10,
+                    'lengthMenu': [[10, 25, 50, -1], [10, 25, 50, 'Tất cả']],
+                    "language": { /* Giữ nguyên cấu hình ngôn ngữ của bạn */
+                        "decimal": "", "emptyTable": "Không có dữ liệu",
+                        "info": "Hiển thị _START_ đến _END_ của _TOTAL_ mục",
+                        "infoEmpty": "Hiển thị 0 đến 0 của 0 mục",
+                        "infoFiltered": "(lọc từ _MAX_ mục)", "infoPostFix": "",
+                        "thousands": ",", "lengthMenu": "Hiển thị _MENU_ mục",
+                        "loadingRecords": "Đang tải...", "processing": "Đang xử lý...",
+                        "search": "Tìm kiếm:", "zeroRecords": "Không tìm thấy mục nào phù hợp",
+                        "paginate": { "first": "Đầu", "last": "Cuối", "next": "Tiếp", "previous": "Trước" },
+                        "aria": { "sortAscending": ": Sắp xếp cột tăng dần", "sortDescending": ": Sắp xếp cột giảm dần" }
+                    },
+                    "columnDefs": [ { "orderable": false, "targets": -1 } ], /* Cột cuối (Hành động) */
+                    responsive: true,
+                    "order": [[3, "asc"]], // Sắp xếp theo Ngày Yêu cầu (cột thứ 4, index 3) tăng dần
+                    "drawCallback": function( settings ) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 });
+                        M.textareaAutoResize($('.materialize-textarea')); // Đảm bảo resize sau khi draw
+                    },
+                    "initComplete": function(settings, json) {
+                        $('div.dataTables_wrapper div.dataTables_length select').addClass('browser-default');
+                        $('div.dataTables_wrapper div.dataTables_filter input[type="search"]').css({ 'height': 'auto', 'margin-left': '0.5em' });
+                    }
+                });
+            }
+
+            setTimeout(function() {
+                $('.tempdata-panel').fadeOut('slow', function() { $(this).remove(); });
+            }, 3500);
+
+            // Logic mở lại modal nếu có lỗi từ server (TempData)
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                if (TempData[$"ErrorMessageReject_{item.Id}"] != null)
+                {
+                    <text>
+                                    var modalInstanceReject = M.Modal.getInstance(document.getElementById('rejectModal_@item.Id'));
+                                    if (modalInstanceReject) {
+                                        modalInstanceReject.open();
+                                         M.textareaAutoResize($('#staffRemarksReject_@item.Id')); // Re-trigger resize
+                                         M.CharacterCounter.init($('#staffRemarksReject_@item.Id')); // Re-init counter
+                                    }
+                    </text>
+                }
+                // Tương tự nếu có ErrorMessageApprove_{item.Id}
+            }
+        }
+        });
+    </script>
+}

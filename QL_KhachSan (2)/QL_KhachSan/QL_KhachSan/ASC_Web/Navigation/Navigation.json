@@ -1,0 +1,228 @@
+{
+    "MenuItems": [
+        {
+            "DisplayName": "Bảng Điều Khiển",
+            "MaterialIcon": "dashboard", 
+            "Link": "/ServiceRequests/Dashboard/Dashboard",
+            "IsNested": false,
+            "Sequence": 1,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ],
+            "NestedItems": []
+        },
+        {
+            "DisplayName": "Quản lý Người dùng",
+            "MaterialIcon": "manage_accounts",
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 2,
+            "UserRoles": [ "Admin", "Manager" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Tài khoản Khách hàng",
+                    "MaterialIcon": "people_outline", 
+                    "Link": "/Accounts/Account/Customers",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist" ]
+                },
+                {
+                    "DisplayName": "Tài khoản Nhân viên",
+                    "MaterialIcon": "badge", 
+                    "Link": "/Accounts/Account/StaffAccounts",
+                    "IsNested": false,
+                    "Sequence": 2,
+                    "UserRoles": [ "Admin", "Manager" ]
+                },
+                {
+                    "DisplayName": "Quản lý Vai trò",
+                    "MaterialIcon": "admin_panel_settings", 
+                    "Link": "/Roles/Index",
+                    "IsNested": false,
+                    "Sequence": 3,
+                    "UserRoles": [ "Admin" ]
+                }
+            ]
+        },
+        {
+            "DisplayName": "Dịch vụ Khách",
+            "MaterialIcon": "room_service", 
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 3,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Xem Yêu cầu Dịch vụ",
+                    "MaterialIcon": "view_list",
+                    "Link": "/ServiceRequests/ServiceRequest/PendingList",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping" ]
+                },
+                {
+                    "DisplayName": "Tạo Yêu cầu DV Mới",
+                    "MaterialIcon": "add_circle_outline",
+                    "Link": "/ServiceRequests/ServiceRequest/Create",
+                    "IsNested": false,
+                    "Sequence": 2,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                }
+
+            ]
+        },
+        {
+            "DisplayName": "Đặt phòng",
+            "MaterialIcon": "book_online", 
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 4,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Customer" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Xem danh sách phòng",
+                    "MaterialIcon": "meeting_room", 
+                    "Link": "/Room/Rooms/Index",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                },
+                {
+                    "DisplayName": "Lịch sử Đặt phòng",
+                    "MaterialIcon": "history", 
+                    "Link": "/Booking/Booking/MyBookings",
+                    "IsNested": false,
+                    "Sequence": 3,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                }
+            ]
+        },
+        {
+            "DisplayName": "Quản lý Phòng (Admin)", 
+            "MaterialIcon": "door_sliding",
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 5,
+            "UserRoles": [ "Admin", "Manager" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Danh sách đặt phòng",
+                    "MaterialIcon": "assignment_turned_in", 
+                    "Link": "/Admin/AdminBooking/AllBookings",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager" ]
+                },
+                {
+                    "DisplayName": "Xác nhận yêu cầu", 
+                    "MaterialIcon": "pending_actions", 
+                    "Link": "/Admin/AdminBooking/PendingRequests",
+                    "IsNested": false,
+                    "Sequence": 2,
+                    "UserRoles": [ "Admin", "Manager" ]
+                }
+            ]
+        },
+        {
+            "DisplayName": "Thông báo",
+            "MaterialIcon": "notifications", 
+            "Link": "/Notifications/Index",
+            "IsNested": false,
+            "Sequence": 6,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+        },
+        {
+            "DisplayName": "Khuyến mãi",
+            "MaterialIcon": "local_offer", 
+            "Link": "/Promotions/Index",
+            "IsNested": false,
+            "Sequence": 7,
+            "UserRoles": [ "Admin", "Manager", "Customer" ]
+        },
+        {
+            "DisplayName": "Cấu hình Khách sạn",
+            "MaterialIcon": "settings_applications", 
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 8,
+            "UserRoles": [ "Admin" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Danh mục",
+                    "MaterialIcon": "category", 
+                    "Link": "/Configuration/MasterData/MasterKeys",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin" ]
+                },
+                {
+                    "DisplayName": "Loại dịch vụ",
+                    "MaterialIcon": "design_services", 
+                    "Link": "/Configuration/MasterData/MasterValues",
+                    "IsNested": false,
+                    "Sequence": 2,
+                    "UserRoles": [ "Admin" ]
+                },
+                {
+                    "DisplayName": "Cài đặt Chung",
+                    "MaterialIcon": "tune", 
+                    "Link": "/Configuration/AppSettings",
+                    "IsNested": false,
+                    "Sequence": 3,
+                    "UserRoles": [ "Admin" ]
+                }
+            ]
+        },
+        {
+            "DisplayName": "Tài khoản của tôi",
+            "MaterialIcon": "account_circle",
+            "Link": "",
+            "IsNested": true,
+            "Sequence": 9,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ],
+            "NestedItems": [
+                {
+                    "DisplayName": "Hồ sơ của tôi",
+                    "MaterialIcon": "person", 
+                    "Link": "/Accounts/Profile/Index",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                },
+                {
+                    "DisplayName": "Các yêu cầu của tôi",
+                    "MaterialIcon": "request_quote",
+                    "Link": "/ServiceRequests/ServiceRequest/MyRequests",
+                    "IsNested": false,
+                    "Sequence": 1,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                },
+                {
+                    "DisplayName": "Đổi mật khẩu",
+                    "MaterialIcon": "password", 
+                    "Link": "/Identity/Account/Manage/ChangePassword",
+                    "IsNested": false,
+                    "Sequence": 2,
+                    "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ]
+                }
+            ]
+        },
+        {
+            "DisplayName": "Quên mật khẩu",
+            "MaterialIcon": "lock_reset",
+            "Link": "/Identity/Account/ForgotPassword",
+            "IsNested": false,
+            "Sequence": 10,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ],
+            "NestedItems": []
+        },
+        {
+            "DisplayName": "Đăng xuất",
+            "MaterialIcon": "logout",
+            "Link": "/Identity/Account/Logout",
+            "IsNested": false,
+            "Sequence": 11,
+            "UserRoles": [ "Admin", "Manager", "Receptionist", "Housekeeping", "Customer" ],
+            "NestedItems": []
+        }
+    ]
+}

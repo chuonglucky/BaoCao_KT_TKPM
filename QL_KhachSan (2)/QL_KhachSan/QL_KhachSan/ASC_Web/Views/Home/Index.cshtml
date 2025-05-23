@@ -1,0 +1,149 @@
+﻿@using Microsoft.Extensions.Options
+@using ASC_Web.Configuration @* Namespace cho ApplicationSettings *@
+@inject IOptions<ApplicationSettings> _hotelSettingsAccessor
+
+@{
+    ViewData["Title"] = "Trang Chủ";
+    // MODIFIED: Use ApplicationTitle for the main banner heading
+    var bannerTitle = _hotelSettingsAccessor?.Value?.ApplicationTitle ?? "Chào Mừng Đến Với Chúng Tôi"; // Fallback if ApplicationTitle is not set
+    // Variable to hold original HotelName if needed for alt tags or other distinct uses
+    var hotelNameForAlt = _hotelSettingsAccessor?.Value?.HotelName ?? "Khách sạn Hiện Đại";
+}
+
+@* Banner chính - Parallax với background1.jpg *@
+<div id="index-banner" class="parallax-container" style="min-height: 500px; height: 75vh;">
+    @* Tăng chiều cao một chút *@
+    <div class="section no-pad-bot">
+        <div class="container" style="padding-top: 10vh;">
+            @* This will now display the ApplicationTitle (or the fallback) *@
+            <h1 class="header center white-text text-shadow-strong">@bannerTitle</h1>
+            <div class="row center">
+                <h5 class="header col s12 light white-text text-shadow-medium">Nơi mỗi khoảnh khắc là một trải nghiệm đáng nhớ.</h5>
+            </div>
+            <div class="row center" style="margin-top: 2.5rem;">
+                <a href="@Url.Action("Index", "Bookings")" id="hero-booking-button" class="btn-large waves-effect waves-light teal lighten-1 hoverable pulse"><i class="material-icons left">meeting_room</i>Khám Phá Phòng</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/images/background1.jpg" alt="Ảnh bìa @hotelNameForAlt"></div> @* Alt text can use a different variable if needed *@
+</div>
+
+@* Section 1: Giới thiệu dịch vụ - Icon Blocks *@
+<div class="container">
+    <div class="section">
+        <div class="row" style="margin-top: 2.5rem; margin-bottom: 1.5rem;">
+            <div class="col s12 center">
+                <h3 class="teal-text text-darken-3 header">Dịch Vụ Vượt Trội</h3>
+                <p class="light flow-text grey-text text-darken-2">Tận hưởng những tiện ích và dịch vụ được thiết kế dành riêng cho bạn.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block center hoverable card-panel white" style="padding: 25px; border-radius: 10px; min-height:280px;">
+                    <h2 class="center teal-text"><i class="material-icons large">king_bed</i></h2>
+                    <h5 class="center">Không Gian Nghỉ Dưỡng</h5>
+                    <p class="light">Phòng ốc sang trọng, tiện nghi, thiết kế hiện đại, mang đến sự thoải mái tối đa cho kỳ nghỉ của bạn.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center hoverable card-panel white" style="padding: 25px; border-radius: 10px; min-height:280px;">
+                    <h2 class="center deep-orange-text text-accent-4"><i class="material-icons large">restaurant_menu</i></h2>
+                    <h5 class="center">Trải Nghiệm Ẩm Thực</h5>
+                    <p class="light">Nhà hàng phục vụ đa dạng các món ăn đặc sắc, từ hương vị địa phương đến tinh hoa ẩm thực quốc tế.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="icon-block center hoverable card-panel white" style="padding: 25px; border-radius: 10px; min-height:280px;">
+                    <h2 class="center blue-text"><i class="material-icons large">local_bar</i></h2>
+                    <h5 class="center">Tiện Ích & Giải Trí</h5>
+                    <p class="light">Hồ bơi, spa, phòng gym hiện đại và quầy bar sôi động luôn sẵn sàng phục vụ mọi nhu cầu thư giãn của bạn.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Section 2: Parallax với background2.jpg *@
+<div class="parallax-container valign-wrapper" style="min-height: 400px; height: 55vh;">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h3 class="header col s12 light white-text text-shadow-strong">Đẳng Cấp & Tinh Tế</h3>
+                <p class="col s12 white-text light text-shadow-medium flow-text" style="margin-top:1rem;">Mọi chi tiết đều được chăm chút tỉ mỉ để mang lại sự hài lòng tuyệt đối.</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/images/background2.jpg" alt="Nội thất sang trọng @hotelNameForAlt"></div>
+</div>
+
+@* Section 3: Lời chứng thực hoặc giới thiệu thêm *@
+<div class="container">
+    <div class="section">
+        <div class="row" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
+            <div class="col s12 l10 offset-l1">
+                <h3 class="center teal-text text-darken-3 header">Khách Hàng Nói Về Chúng Tôi</h3>
+                <div class="row" style="margin-top:2rem;">
+                    <div class="col s12 m6">
+                        <div class="card-panel z-depth-1 grey lighten-5">
+                            <p class="flow-text">
+                                <i class="material-icons teal-text">format_quote</i>
+                                Dịch vụ tuyệt vời, phòng ốc sạch sẽ và nhân viên cực kỳ thân thiện. Tôi chắc chắn sẽ quay lại!
+                            </p>
+                            <p class="right-align"><strong>- Chị Lan Anh, TP. HCM</strong></p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card-panel z-depth-1 grey lighten-5">
+                            <p class="flow-text">
+                                <i class="material-icons teal-text">format_quote</i>
+                                Vị trí thuận tiện, đồ ăn ngon và không gian rất thư giãn. Rất khuyến khích cho các cặp đôi.
+                            </p>
+                            <p class="right-align"><strong>- Anh Minh Tuấn, Hà Nội</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center" style="margin-top:2rem;">
+                    <a href="@Url.Action("Reviews", "Home")" class="btn waves-effect waves-light orange darken-2 hoverable">Xem Thêm Đánh Giá</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Section 4: Parallax với background3.jpg - Lời kêu gọi hành động cuối cùng *@
+<div class="parallax-container valign-wrapper" style="min-height: 450px; height: 65vh;">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h3 class="header col s12 light white-text text-shadow-strong">Sẵn Sàng Cho Kỳ Nghỉ Hoàn Hảo?</h3>
+                <p class="col s12 white-text light text-shadow-medium flow-text" style="margin-top:1rem;">Đừng chần chừ, hãy khám phá các loại phòng và ưu đãi đặc biệt của chúng tôi ngay hôm nay!</p>
+                <div style="margin-top: 2rem;">
+                    <a href="@Url.Action("Index", "Rooms")" class="btn-large waves-effect waves-light teal lighten-1 hoverable" style="margin: 5px;"><i class="material-icons left">search</i>Tìm Phòng</a>
+                    <a href="@Url.Action("Offers", "Home")" class="btn-large waves-effect waves-light amber darken-3 hoverable" style="margin: 5px;"><i class="material-icons left">card_giftcard</i>Xem Ưu Đãi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/images/background3.jpg" alt="Ưu đãi khách sạn @hotelNameForAlt"></div>
+</div>
+
+<style>
+    .text-shadow-strong {
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .text-shadow-medium {
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .parallax-container {
+        background-color: rgba(0,0,0,0.2); /* Lớp phủ tối nhẹ cho ảnh parallax */
+    }
+</style>
+
+@section Scripts {
+    <script>
+        // Bất kỳ script nào đặc thù cho trang Index có thể được đặt ở đây
+        // console.log("Trang chủ đã được tải và các thành phần Materialize nên được khởi tạo từ layout.");
+    </script>
+}

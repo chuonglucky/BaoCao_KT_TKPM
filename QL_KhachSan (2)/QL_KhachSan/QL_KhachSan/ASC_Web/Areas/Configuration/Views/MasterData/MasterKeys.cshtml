@@ -1,0 +1,325 @@
+﻿@using ASC_Web.Areas.Configuration.Models
+@model MasterKeysViewModel
+@{
+    Layout = "_SecureLayout";
+    ViewData["Title"] = "Quản lý Danh mục Chính (Master Keys)";
+}
+
+<style>
+    /* --- General Page & Card Structure --- */
+    .card .card-content .card-title {
+        margin-bottom: 20px; /* Add space below card titles */
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem; /* Consistent card title size */
+    }
+
+        .card .card-content .card-title .material-icons {
+            margin-right: 10px;
+            font-size: 1.8rem; /* Consistent icon size in card title */
+        }
+
+    .card .card-action {
+        padding: 16px 24px;
+    }
+
+    /* --- Table Specific Styles --- */
+    .responsive-table-wrapper {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 10px; /* Space above table if title/actions present */
+    }
+
+    .responsive-table {
+        width: 100%;
+    }
+
+        .responsive-table th,
+        .responsive-table td {
+            white-space: nowrap; /* Default to nowrap, can be overridden for specific columns */
+            vertical-align: middle;
+            padding: 10px 8px; /* Adjust padding for table cells */
+        }
+
+    #tblMasterKeys th.actions-header,
+    #tblMasterKeys td.actions-cell {
+        min-width: 130px; /* Adjusted for two floating buttons */
+        text-align: center !important;
+    }
+
+        #tblMasterKeys td.actions-cell .btn-floating.btn-small {
+            margin: 0 4px;
+        }
+
+    /* Status Badge in Table */
+    #tblMasterKeys .badge.custom-badge { /* Using a more specific class */
+        font-weight: 500;
+        font-size: 0.82rem;
+        color: white !important;
+        border-radius: 4px; /* Slightly more rounded */
+        padding: 3px 10px; /* Adjusted padding */
+        line-height: normal; /* Let line-height be natural */
+        text-transform: capitalize; /* e.g., Hoạt động */
+        min-width: 90px; /* Ensure a minimum width for consistency */
+        text-align: center;
+        display: inline-block;
+    }
+
+        #tblMasterKeys .badge.custom-badge.green {
+            background-color: #4caf50 !important; /* Materialize Green */
+        }
+
+        #tblMasterKeys .badge.custom-badge.red {
+            background-color: #f44336 !important; /* Materialize Red */
+        }
+
+    /* --- Form Specific Styles --- */
+    #formMasterKey .input-field {
+        margin-bottom: 1.5rem; /* Space between input fields */
+    }
+
+    #formMasterKey .switch {
+        padding-top: 20px; /* Align switch with text input baseline */
+        margin-bottom: 1rem;
+    }
+
+        #formMasterKey .switch label {
+            font-size: 0.9rem; /* Adjust switch label font size */
+        }
+
+    /* Validation summary panel */
+    .validation-summary-panel {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 5px solid #c62828; /* red darken-3 */
+    }
+
+    /* --- DataTables Integration --- */
+    div.dataTables_wrapper div.dataTables_length select {
+        width: auto;
+        display: inline-block;
+        height: auto; /* Or a fixed height like 3rem to match Materialize inputs */
+        padding: 5px 10px;
+        border: 1px solid #9e9e9e; /* Materialize grey */
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input {
+        border: 1px solid #9e9e9e;
+        padding: 5px 8px;
+        border-radius: 3px;
+        margin-left: 0.5em;
+        height: auto; /* Or fixed height */
+    }
+
+    .dataTables_info, .dataTables_paginate {
+        padding-top: 1em;
+    }
+
+    /* Responsive adjustments for table cells */
+    @@media (max-width: 768px) {
+        .responsive-table th,
+        .responsive-table td {
+            white-space: normal; /* Allow wrapping on smaller screens */
+            font-size: 0.85rem;
+        }
+
+        #tblMasterKeys th.actions-header,
+        #tblMasterKeys td.actions-cell {
+            min-width: 110px;
+        }
+    }
+</style>
+
+<div class="container" style="margin-top:20px; width: 95%; max-width: 1600px;">
+    @* Wider container *@
+    <h4 class="blue-grey-text text-darken-2">@ViewData["Title"]</h4>
+    <div class="divider" style="margin-bottom: 25px;"></div>
+
+    <div class="card z-depth-1">
+        <div class="card-content">
+            <span class="card-title grey-text text-darken-1"><i class="material-icons">view_list</i>Danh sách Danh mục</span>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="card-panel green lighten-4 green-text text-darken-3" style="padding: 15px; margin-top:15px;" onclick="this.style.display='none';">
+                    <i class="material-icons left tiny">check_circle</i>@Html.Raw(TempData["SuccessMessage"])
+                </div>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="card-panel red lighten-4 red-text text-darken-3" style="padding: 15px; margin-top:15px;" onclick="this.style.display='none';">
+                    <i class="material-icons left tiny">error_outline</i>@Html.Raw(TempData["ErrorMessage"])
+                </div>
+            }
+
+            @if (Model.MasterKeys != null && Model.MasterKeys.Any())
+            {
+                <div class="responsive-table-wrapper">
+                    <table class="highlight responsive-table" id="tblMasterKeys">
+                        @* Removed 'centered' for better readability of text columns *@
+                        <thead>
+                            <tr>
+                                <th>Tên Danh mục</th>
+                                <th class="center-align">Trạng thái</th>
+                                <th class="actions-header center-align">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var masterKey in Model.MasterKeys.OrderBy(mk => mk.Name))
+                            {
+                                <tr>
+                                    <td>@masterKey.Name</td>
+                                    <td class="center-align">
+                                        @if (masterKey.IsActive)
+                                        {
+                                            <span class="badge custom-badge green" data-badge-caption="">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge custom-badge red" data-badge-caption="">Không HĐ</span>
+                                        }
+                                    </td>
+                                    <td class="actions-cell">
+                                        <a asp-action="EditMasterKey" asp-route-id="@masterKey.Id" class="btn-floating btn-small waves-effect waves-light blue tooltipped" data-position="top" data-tooltip="Sửa Danh mục">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                        <form asp-action="DeleteMasterKey" asp-route-id="@masterKey.Id" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn XÓA Danh mục [@masterKey.Name]? Hành động này cũng sẽ xóa tất cả các giá trị (Master Value) liên quan.');">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="top" data-tooltip="Xóa Danh mục">
+                                                <i class="material-icons">delete_forever</i> @* More destructive icon *@
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <p class="flow-text grey-text center-align" style="padding:20px; margin-top:15px;">
+                    <i class="material-icons left">info_outline</i>Hiện không có Danh mục Chính nào. Vui lòng thêm mới.
+                </p>
+            }
+        </div>
+    </div>
+
+    <div class="card z-depth-1" style="margin-top: 30px;">
+        <div class="card-content">
+            <span class="card-title grey-text text-darken-1">
+                <i class="material-icons">@(Model.IsEdit ? "edit_note" : "playlist_add")</i>
+                @(Model.IsEdit ? "Chỉnh sửa Danh mục Chính" : "Thêm mới Danh mục Chính")
+            </span>
+
+            <form asp-controller="MasterData" asp-action="CreateOrEditMasterKey" method="post" id="formMasterKey" style="margin-top:20px;">
+                @Html.AntiForgeryToken()
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="card-panel red lighten-4 red-text text-darken-4 validation-summary-panel">
+                        <span style="font-size:1.1rem; display:block; margin-bottom:10px;">Vui lòng kiểm tra lại thông tin:</span>
+                        <div asp-validation-summary="All"></div> @* Changed to All to show field errors as well *@
+                    </div>
+                }
+
+
+                <input type="hidden" asp-for="IsEdit" />
+                @if (Model.IsEdit)
+                {
+                    <input type="hidden" asp-for="MasterKeyInContext.Id" />
+                }
+
+                <div class="row">
+                    <div class="input-field col s12 m8 l7">
+                        <i class="material-icons prefix">label_important</i>
+                        <input asp-for="MasterKeyInContext.Name" id="MasterKeyInContext_Name" class="validate" required />
+                        <label asp-for="MasterKeyInContext.Name">Tên Danh mục Chính</label>
+                        <span asp-validation-for="MasterKeyInContext.Name" class="helper-text red-text" data-error-message="@Html.ValidationMessageFor(m => m.MasterKeyInContext.Name)"></span>
+                    </div>
+
+                    <div class="input-field col s12 m4 l5">
+                        <div class="switch">
+                            <label style="font-size:0.9rem;">
+                                Không hoạt động
+                                <input asp-for="MasterKeyInContext.IsActive" />
+                                <span class="lever"></span>
+                                Hoạt động
+                            </label>
+                        </div>
+                        <span asp-validation-for="MasterKeyInContext.IsActive" class="helper-text red-text" style="display:block; margin-top:5px;"></span>
+                    </div>
+                </div>
+                <div class="card-action right-align" style="padding-top: 10px; padding-bottom:10px; border-top: 1px solid rgba(160,160,160,0.2); margin-top:10px;">
+                    <a asp-action="MasterKeys" class="btn waves-effect waves-grey grey lighten-1 black-text tooltipped" data-tooltip="Hủy bỏ và quay lại danh sách">
+                        <i class="material-icons left">cancel</i>Hủy
+                    </a>
+                    <button class="btn waves-effect waves-light blue darken-1 btnSubmit tooltipped" type="submit" name="action" data-tooltip="@(Model.IsEdit ? "Lưu các thay đổi" : "Tạo danh mục mới")">
+                        @(Model.IsEdit ? "Lưu thay đổi" : "Tạo mới")
+                        <i class="material-icons right">@(Model.IsEdit ? "save" : "add_circle")</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            // Initialize Materialize components
+            M.AutoInit(); // Initializes tooltips, formSelect, etc.
+            M.updateTextFields(); // For labels on pre-filled inputs
+
+            // DataTable Initialization
+            if ($('#tblMasterKeys tbody tr').length > 0 || $('#tblMasterKeys tbody tr').length === 0 && $('#tblMasterKeys').length > 0) { // Init even if table is empty
+                $('#tblMasterKeys').DataTable({
+                    'pageLength': 5,
+                    'lengthMenu': [[5, 10, 25, 50, -1], [5, 10, 25, 50, 'Tất cả']],
+                    "language": {
+                        "lengthMenu": "Hiển thị _MENU_ mục",
+                        "zeroRecords": "Không tìm thấy dữ liệu phù hợp",
+                        "info": "Trang _PAGE_ trên _PAGES_ (Tổng: _TOTAL_ mục)",
+                        "infoEmpty": "Không có mục nào để hiển thị",
+                        "infoFiltered": "(lọc từ _MAX_ mục)",
+                        "search": "Tìm kiếm:",
+                        "paginate": { "first": "&laquo;", "last": "&raquo;", "next": "&rsaquo;", "previous": "&lsaquo;" }
+                    },
+                    "columnDefs": [
+                        { "orderable": false, "targets": 2 } // Disable sorting for Actions column
+                    ],
+                    responsive: true,
+                    "drawCallback": function(settings) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 }); // Re-init tooltips
+                    },
+                    "initComplete": function(settings, json) {
+                        $('div.dataTables_wrapper div.dataTables_length select').addClass('browser-default');
+                        $('div.dataTables_wrapper div.dataTables_filter input[type="search"]').css({ 'height': 'auto', 'margin-left': '0.5em' });
+                    }
+                });
+            }
+
+            // Auto-hide TempData messages
+            setTimeout(function() {
+                $('.card-panel.green, .card-panel.red').fadeOut('slow', function() { $(this).remove(); });
+            }, 4000); // Slightly longer display time
+
+            // Logic to scroll to form if there are validation errors on POST
+            if ($('#formMasterKey .validation-summary-panel ul li').length > 0 || $('#formMasterKey .input-field .red-text:not(:empty)').length > 0) {
+                 // Check if IsEdit is true to determine form title context
+                var isEditMode = $('#IsEdit').val() === 'true';
+                var formTitle = isEditMode ? "Chỉnh sửa Danh mục Chính" : "Thêm mới Danh mục Chính";
+                 $('#formMasterKey').closest('.card').find('.card-title').html('<i class="material-icons">@(Model.IsEdit ? "edit_note" : "playlist_add")</i> ' + formTitle + ' <small class="red-text">(Có lỗi)</small>');
+
+                $('html, body').animate({
+                    scrollTop: $("#formMasterKey").offset().top - 70 // 70 for potential fixed navbar height
+                }, 500);
+            }
+        });
+    </script>
+}

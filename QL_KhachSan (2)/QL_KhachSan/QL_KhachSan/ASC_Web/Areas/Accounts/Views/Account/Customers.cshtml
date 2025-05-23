@@ -1,0 +1,452 @@
+﻿@model ASC_Web.Areas.Accounts.Models.CustomerViewModel
+@using Microsoft.AspNetCore.Identity
+@using ASC.Model.BaseTypes
+
+@{
+    ViewData["Title"] = "Quản lý Khách hàng";
+    Layout = "_SecureLayout";
+}
+
+<style>
+    .status-box {
+        padding: 6px 8px;
+        border-radius: 3px;
+        color: white;
+        text-align: center;
+        line-height: 1.2;
+        display: inline-block;
+        min-width: 70px;
+        font-size: 0.85em;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .status-box-active {
+        background-color: #66bb6a; /* green lighten-1 */
+    }
+
+    .status-box-inactive {
+        background-color: #ef5350; /* red lighten-1 */
+    }
+
+    .margin-bottom-10px {
+        margin-bottom: 10px !important;
+    }
+
+    .responsive-table-wrapper {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .responsive-table {
+        width: 100%;
+    }
+
+        .responsive-table th,
+        .responsive-table td {
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+            .responsive-table th.actions-header,
+            .responsive-table td.actions-cell {
+                min-width: 130px;
+                text-align: center;
+            }
+
+                .responsive-table td.actions-cell .btn-floating.btn-small {
+                    margin: 0 3px;
+                }
+
+    .table-title-and-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+        .table-title-and-actions .card-title {
+            margin: 0;
+            margin-right: 10px;
+        }
+
+    /* CSS cho form khi nằm dưới */
+    .form-card-bottom {
+        margin-top: 30px; /* Tạo khoảng cách với bảng danh sách ở trên */
+    }
+
+
+    media (max-width: 600px) {
+        .table-title-and-actions
+
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-title-and-actions .card-title {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    }
+</style>
+
+<div class="container" style="margin-top:20px;">
+    <h4 class="blue-grey-text text-darken-2">@ViewData["Title"]</h4>
+    <div class="divider"></div>
+
+    <div class="row" style="margin-top:15px;">
+        @if (TempData["Message"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel teal lighten-2 white-text z-depth-1" onclick="this.style.display='none'" style="cursor:pointer;">
+                    <i class="material-icons left tiny">check_circle</i>@Html.Raw(TempData["Message"])
+                </div>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel red lighten-2 white-text z-depth-1" onclick="this.style.display='none'" style="cursor:pointer;">
+                    <i class="material-icons left tiny">error_outline</i>@Html.Raw(TempData["ErrorMessage"])
+                </div>
+            </div>
+        }
+    </div>
+
+    @* THAY ĐỔI THỨ TỰ VÀ CỘT LAYOUT *@
+    <div class="row">
+        @* 1. DANH SÁCH KHÁCH HÀNG (Nằm trên) *@
+        <div class="col s12 m12 l12">
+            <div class="card z-depth-2">
+                <div class="card-content">
+                    <div class="table-title-and-actions">
+                        <span class="card-title grey-text text-darken-1">Danh sách Khách hàng</span>
+                        @* Nút Export Excel nếu có *@
+                    </div>
+
+                    @if (Model.DisplayCustomers != null && Model.DisplayCustomers.Any())
+                    {
+                        <div class="responsive-table-wrapper">
+                            <table class="striped highlight responsive-table" id="tblCustomers">
+                                <thead>
+                                    <tr>
+                                        <th>Tên đăng nhập (Email)</th> @* Changed header text *@
+                                        <th>Email</th>
+                                        <th class="center-align">Trạng thái</th>
+                                        <th class="center-align actions-header">Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var customer in Model.DisplayCustomers.OrderBy(c => c.UserName))
+                                    {
+                                        <tr>
+                                            <td>@customer.UserName</td> @* This will now be the email *@
+                                            <td>@customer.Email</td>
+                                            <td class="center-align">
+                                                @if (customer.IsActive)
+                                                {
+                                                    <div class="status-box status-box-active tooltipped" data-position="top" data-tooltip="Đang hoạt động">Hoạt động</div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="status-box status-box-inactive tooltipped" data-position="top" data-tooltip="Đã vô hiệu hóa">Vô hiệu</div>
+                                                }
+                                            </td>
+                                            <td class="center-align actions-cell">
+                                                <button class="btn-floating btn-small waves-effect waves-light orange darken-1 edit-customer tooltipped"
+                                                        data-position="top" data-tooltip="Sửa trạng thái"
+                                                        data-userid="@customer.UserId"
+                                                        data-email="@customer.Email"
+                                                        data-username="@customer.UserName" @* This username is for display in form title *@
+                                                        data-isactive="@customer.IsActive.ToString().ToLower()">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                                <form asp-action="DeleteCustomer" asp-controller="Account" asp-area="Accounts" method="post" style="display:inline-block;"
+                                                      onsubmit="return confirm('Bạn có chắc chắn muốn xóa khách hàng @customer.UserName? Hành động này không thể hoàn tác.');">
+                                                    <input type="hidden" name="userId" value="@customer.UserId" />
+                                                    @Html.AntiForgeryToken()
+                                                    <button type="submit" class="btn-floating btn-small waves-effect waves-light red darken-1 tooltipped"
+                                                            data-position="top" data-tooltip="Xóa khách hàng">
+                                                        <i class="material-icons">delete_forever</i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="flow-text grey-text center-align" style="padding:20px;">Không có khách hàng nào để hiển thị.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @* 2. FORM THÊM/SỬA KHÁCH HÀNG (Nằm dưới) *@
+        <div class="col s12 m12 l12 form-card-bottom">
+            <div class="card z-depth-2">
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-1" id="formTitle">Thêm Khách hàng mới</span>
+                    <form asp-controller="Account" asp-action="Customers" method="post" class="col s12" id="customerForm" style="margin-top: 15px;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Registration.IsEdit" />
+                        @* Changed hidden field for UserId in edit mode. UserName field removed. *@
+                        <input type="hidden" asp-for="Registration.CurrentEditUserId" id="Registration_CurrentEditUserId_Hidden" />
+
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="card-panel red lighten-4 red-text text-darken-4" style="margin-bottom:20px; padding:15px;">
+                                <div asp-validation-summary="ModelOnly"></div>
+                                @foreach (var key in ViewData.ModelState.Keys.Where(k => ViewData.ModelState[k].Errors.Any()))
+                                {
+                                    foreach (var error in ViewData.ModelState[key].Errors)
+                                    {
+                                        if (!string.IsNullOrEmpty(error.ErrorMessage))
+                                        {
+                                            <p><i class="material-icons tiny left">error_outline</i> @error.ErrorMessage</p>
+                                        }
+                                    }
+                                }
+                            </div>
+                        }
+
+                        <div class="row margin-bottom-10px">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input asp-for="Registration.Email" id="Registration_Email_Customer" class="validate" />
+                                <label asp-for="Registration.Email">Email (Dùng làm tên đăng nhập)</label> @* Updated label *@
+                                <span asp-validation-for="Registration.Email" class="helper-text" data-error="Email không hợp lệ hoặc đã tồn tại"></span>
+                            </div>
+                        </div>
+
+                        @* UserName input field removed *@
+                        @*
+                        <div class="row margin-bottom-10px">
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input asp-for="Registration.UserName" id="Registration_UserName_Customer" class="validate" />
+                        <label asp-for="Registration.UserName">Tên đăng nhập</label>
+                        <span asp-validation-for="Registration.UserName" class="helper-text" data-error="Tên đăng nhập không hợp lệ hoặc đã tồn tại"></span>
+                        </div>
+                        </div>
+                        *@
+                        <div class="row margin-bottom-10px" id="passwordSectionCustomer">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input asp-for="Registration.Password" id="Registration_Password_Customer" type="password" class="validate" />
+                                <label asp-for="Registration.Password">Mật khẩu</label>
+                                <span asp-validation-for="Registration.Password" class="helper-text" data-error="Mật khẩu phải có ít nhất 6 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt."></span>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-10px" id="confirmPasswordSectionCustomer">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input asp-for="Registration.ConfirmPassword" id="Registration_ConfirmPassword_Customer" type="password" class="validate" />
+                                <label asp-for="Registration.ConfirmPassword">Xác nhận mật khẩu</label>
+                                <span asp-validation-for="Registration.ConfirmPassword" class="helper-text" data-error="Mật khẩu xác nhận không khớp."></span>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-10px">
+                            <div class="input-field col s12" style="margin-top: 20px;">
+                                <div class="switch">
+                                    <label>
+                                        Vô hiệu hóa
+                                        <input type="checkbox" asp-for="Registration.IsActive" id="Registration_IsActive_Customer">
+                                        <span class="lever"></span>
+                                        Hoạt động
+                                    </label>
+                                </div>
+                                <span asp-validation-for="Registration.IsActive" class="helper-text red-text"></span>
+                            </div>
+                        </div>
+
+                        <div class="card-action right-align" style="margin-top:20px;">
+                            <button class="btn waves-effect waves-light grey lighten-1 black-text reset-customer-form" type="button">
+                                Làm mới <i class="material-icons right">clear</i>
+                            </button>
+                            <button class="btn waves-effect waves-light btnSubmitCustomer blue darken-1" type="submit" name="action" id="submitButtonCustomer">
+                                Tạo mới <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            M.updateTextFields();
+            $('select').formSelect();
+            $('.tooltipped').tooltip({ exitDelay: 50 });
+
+            function clearCustomerValidationErrors() {
+                $('#customerForm .card-panel.red').remove();
+                $('#customerForm .input-field input.invalid').removeClass('invalid');
+                $('#customerForm .input-field .helper-text[data-error]').text(''); // Clear default helper text too
+                $('#customerForm .input-validation-error').removeClass('input-validation-error');
+                // Clear model-only errors
+                var modelOnlyDiv = $('#customerForm div[asp-validation-summary="ModelOnly"]');
+                if (modelOnlyDiv.length > 0) {
+                    var ul = modelOnlyDiv.find('ul');
+                    if (ul.length > 0) {
+                        ul.empty(); // Clear list items
+                        if (ul.children().length === 0 && modelOnlyDiv.hasClass('validation-summary-errors') && !modelOnlyDiv.hasClass('validation-summary-valid')) {
+                            // If you want to remove the div itself if it was only for errors.
+                            // modelOnlyDiv.parent('.card-panel.red').remove(); // Be careful with this structure.
+                        }
+                    } else {
+                        modelOnlyDiv.empty(); // Fallback if no UL
+                    }
+                }
+                // Remove the error panel if it exists
+                $('#customerForm .card-panel.red.lighten-4').remove();
+            }
+
+            function resetCustomerFormToAddMode() {
+                $('#customerForm')[0].reset();
+                clearCustomerValidationErrors();
+                $('#Registration_IsEdit').val('false');
+                $('#Registration_CurrentEditUserId_Hidden').val(''); // Changed ID
+                $('#Registration_Email_Customer').prop('readonly', false).removeClass('grey-text text-darken-1');
+                // $('#Registration_UserName_Customer').prop('readonly', false).removeClass('grey-text text-darken-1'); // Removed UserName field
+                $('#passwordSectionCustomer').show();
+                $('#confirmPasswordSectionCustomer').show();
+                $('#Registration_IsActive_Customer').prop('checked', true);
+                $('#formTitle').text('Thêm Khách hàng mới');
+                $('#submitButtonCustomer').html('Tạo mới <i class="material-icons right">send</i>').removeClass('green').addClass('blue darken-1');
+                M.updateTextFields(); // Ensure labels float correctly after reset
+            }
+
+            $('.reset-customer-form').on('click', function () {
+                resetCustomerFormToAddMode();
+                $('html, body').animate({
+                    scrollTop: $("#customerForm").offset().top - 70
+                }, 500);
+            });
+
+            $('.edit-customer').on('click', function () {
+                clearCustomerValidationErrors();
+                var userId = $(this).data('userid');
+                var email = $(this).data('email');
+                var userName = $(this).data('username'); // This is for the title, taken from table data
+                var isActive = $(this).data('isactive').toString() === 'true';
+
+                $('#Registration_IsEdit').val('true');
+                $('#Registration_CurrentEditUserId_Hidden').val(userId); // Changed ID
+
+                $('#Registration_Email_Customer').val(email).prop('readonly', true).addClass('grey-text text-darken-1');
+                // $('#Registration_UserName_Customer').val(userName).prop('readonly', true).addClass('grey-text text-darken-1'); // Removed UserName field
+
+                $('#passwordSectionCustomer').hide();
+                $('#confirmPasswordSectionCustomer').hide();
+                $('#Registration_Password_Customer').val('');
+                $('#Registration_ConfirmPassword_Customer').val('');
+
+                $('#Registration_IsActive_Customer').prop('checked', isActive);
+
+                $('#formTitle').text('Cập nhật Trạng thái Khách hàng: ' + userName); // userName from data-username
+                $('#submitButtonCustomer').html('Cập nhật <i class="material-icons right">save</i>').removeClass('blue darken-1').addClass('green');
+
+                M.updateTextFields(); // Crucial for Materialize labels to float correctly
+
+                $('html, body').animate({
+                    scrollTop: $("#customerForm").offset().top - 70
+                }, 500);
+            });
+
+            // --- Logic to handle form state on page load if there were validation errors ---
+            var isEditModeOnErrorCust = $('#Registration_IsEdit').val() === 'true';
+            // Check for general errors (ModelOnly or custom error panel)
+            var hasGeneralErrorsCust = $('#customerForm div[asp-validation-summary="ModelOnly"] ul li:not(:empty)').length > 0 ||
+                $('#customerForm .card-panel.red.lighten-4 p:not(:empty)').length > 0;
+            // Check for field-specific errors by looking for Materialize's 'invalid' class or our specific helper text pattern
+            var hasFieldErrorsCust = $('#customerForm .input-field input.invalid').length > 0 ||
+                $('#customerForm .input-field .helper-text.field-validation-error').length > 0;
+
+
+            if (hasGeneralErrorsCust || hasFieldErrorsCust) {
+                if (isEditModeOnErrorCust && $('#Registration_CurrentEditUserId_Hidden').val()) { // Changed ID and check its value
+                    // Retain edit mode UI if it was an edit attempt that failed
+                    $('#Registration_Email_Customer').prop('readonly', true).addClass('grey-text text-darken-1');
+                    // $('#Registration_UserName_Customer').prop('readonly', true).addClass('grey-text text-darken-1'); // Removed UserName field
+                    $('#passwordSectionCustomer').hide();
+                    $('#confirmPasswordSectionCustomer').hide();
+                    // Use email for title if username field is gone, as username is email
+                    var emailForTitleOnError = $('#Registration_Email_Customer').val();
+                    $('#formTitle').text('Cập nhật Trạng thái Khách hàng: ' + (emailForTitleOnError || "đang sửa"));
+                    $('#submitButtonCustomer').html('Cập nhật <i class="material-icons right">save</i>').removeClass('blue darken-1').addClass('green');
+                } else if (!isEditModeOnErrorCust) {
+                    // It was an "Add New" attempt that failed
+                    $('#formTitle').text('Thêm Khách hàng mới (Có lỗi, vui lòng kiểm tra)');
+                    // Ensure password fields are visible for add mode
+                    $('#passwordSectionCustomer').show();
+                    $('#confirmPasswordSectionCustomer').show();
+                }
+                M.updateTextFields(); // Ensure labels are positioned correctly based on field values
+
+                // Scroll to form if errors are present and form is not in view
+                var errorFormOffsetTop = $("#customerForm").offset().top - 70;
+                if ($(window).scrollTop() > errorFormOffsetTop + $("#customerForm").outerHeight() || $(window).scrollTop() < errorFormOffsetTop) {
+                    $('html, body').animate({
+                        scrollTop: errorFormOffsetTop < 0 ? 0 : errorFormOffsetTop
+                    }, 500);
+                }
+            }
+
+
+            if ($('#tblCustomers tbody tr').length > 0) {
+                $('#tblCustomers').DataTable({
+                    'pageLength': 10,
+                    'lengthMenu': [[10, 25, 50, -1], [10, 25, 50, 'Tất cả']],
+                    "language": {
+                        "lengthMenu": "Hiển thị _MENU_ mục",
+                        "zeroRecords": "Không tìm thấy khách hàng nào",
+                        "info": "Hiển thị trang _PAGE_ trên _PAGES_ (_TOTAL_ mục)",
+                        "infoEmpty": "Không có khách hàng nào",
+                        "infoFiltered": "(lọc từ _MAX_ tổng số mục)",
+                        "search": "Tìm kiếm:",
+                        "paginate": { "first": "Đầu", "last": "Cuối", "next": "Tiếp", "previous": "Trước" }
+                    },
+                    "columnDefs": [{ "orderable": false, "targets": 3 }], // Assuming 'Hành động' is the 4th column (index 3)
+                    responsive: true,
+                    "drawCallback": function (settings) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 }); // Re-init tooltips for new rows
+                    },
+                    "initComplete": function (settings, json) {
+                        // Style the lengthMenu select dropdown to be more Materialize-like if needed
+                        $('#tblCustomers_length select').css({ 'width': 'auto', 'display': 'inline-block', 'height': 'auto', 'padding': '5px' })
+                            .addClass('browser-default'); // Use browser default for DataTable controls
+                    }
+                });
+            }
+
+            // Auto-dismiss success/error messages
+            setTimeout(function () {
+                $('.card-panel.teal, .card-panel.red').not('.red.lighten-4') // Don't autodismiss validation summary panel
+                    .fadeOut('slow', function () { $(this).remove(); });
+            }, 3500);
+
+            // Ensure Materialize labels are active if fields have values on page load (e.g. after server-side validation error)
+            M.updateTextFields(); // Call this once more to be sure
+            $('#customerForm input[type="text"], #customerForm input[type="email"], #customerForm input[type="password"]').each(function () {
+                if ($(this).val() && $(this).attr('type') !== 'hidden') {
+                    $(this).siblings('label:not(.active)').addClass('active');
+                }
+            });
+        });
+    </script>
+}

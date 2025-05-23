@@ -1,0 +1,429 @@
+﻿@using Microsoft.Extensions.Options
+@using System.Security.Claims
+@using ASC_Web.Configuration
+@using ASC_Web.Data
+@using ASC.Model.BaseTypes
+
+@inject IOptions<ApplicationSettings> AppSettingsAccessor
+@inject INavigationCacheOperations NavigationCache
+
+@{
+    var applicationTitle = AppSettingsAccessor?.Value?.ApplicationTitle ?? "Hotel Management";
+    var userFullName = "Khách";
+    var userEmail = "";
+    var userAvatarUrl = "/images/default-user-avatar.png"; // Ảnh mặc định
+
+    if (User.Identity.IsAuthenticated)
+    {
+        userFullName = User.FindFirstValue(ClaimTypes.Name) ?? User.Identity.Name;
+        userEmail = User.FindFirstValue(ClaimTypes.Email) ?? "N/A";
+
+        var avatarClaim = User.Claims.FirstOrDefault(c => c.Type == "AvatarUrl");
+        if (avatarClaim != null && !string.IsNullOrEmpty(avatarClaim.Value))
+        {
+            userAvatarUrl = avatarClaim.Value;
+        }
+    }
+
+    var hotelNameFooter = AppSettingsAccessor?.Value?.HotelName ?? applicationTitle;
+    var navigationMenuData = await NavigationCache.GetNavigationCacheAsync();
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @applicationTitle</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+
+    <style>
+        /* General Body & Layout */
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #f5f5f5; /* grey lighten-4 */
+        }
+
+        main.secureLayout {
+            flex: 1 0 auto;
+            padding-left: 300px; /* Sidenav width */
+            padding-top: 20px;
+            padding-bottom: 30px;
+            transition: padding-left 0.3s;
+        }
+
+        footer.secureLayout {
+            padding-left: 300px; /* Sidenav width */
+            transition: padding-left 0.3s;
+        }
+
+        media only screen and (max-width: 992px) {
+            main .secureLayout, footer.secureLayout
+
+        {
+            padding-left: 0;
+        }
+
+        .top-nav .page-title {
+            padding-left: 55px !important;
+        }
+
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            background-color: #00796b; /* teal darken-2 */
+            height: 64px;
+            line-height: 64px;
+        }
+
+            .top-nav .nav-wrapper {
+                height: 100%;
+            }
+
+            .top-nav .page-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-left: 20px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: calc(100% - 100px);
+            }
+
+            .top-nav .sidenav-trigger i.material-icons {
+                font-size: 1.8rem;
+                height: 64px;
+                line-height: 64px;
+            }
+
+        .margin-bottom-0px {
+            margin-bottom: 0px !important;
+        }
+
+        /* Sidenav Styling */
+        .sidenav {
+            width: 300px;
+            background-color: #ffffff;
+        }
+
+            /* Sidenav User View */
+            .sidenav .user-view {
+                padding: 28px 24px; /* Adjusted padding */
+                text-align: center;
+                background-color: #e0f2f1; /* teal lighten-5 */
+                border-bottom: 1px solid #b2dfdb; /* teal lighten-4 */
+                margin-bottom: 8px; /* Add some space before nav items */
+            }
+
+                .sidenav .user-view .circle {
+                    width: 90px; /* Slightly smaller for balance, or keep 100px if preferred */
+                    height: 90px;
+                    display: block;
+                    margin: 0 auto 12px auto;
+                    border: 3px solid #fff;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                }
+
+                .sidenav .user-view .name {
+                    display: block;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    color: #004d40; /* teal darken-4 */
+                    margin-top: 0; /* Removed top margin */
+                    line-height: 1.4;
+                }
+
+                .sidenav .user-view .email {
+                    display: block;
+                    font-size: 0.85rem;
+                    color: #00695c; /* teal darken-3 */
+                    line-height: 1.4;
+                    margin-bottom: 0;
+                }
+
+                .sidenav .user-view a[href^="#user-"] { /* If these are not links */
+                    pointer-events: none;
+                }
+
+                    .sidenav .user-view a[href^="#user-"]:hover {
+                        background-color: transparent !important;
+                    }
+
+
+            /* Sidenav Navigation Items */
+            .sidenav li > a:not(.collapsible-header) {
+                display: flex;
+                align-items: center;
+                padding: 0 24px;
+                font-size: 0.9rem; /* Slightly smaller for more items */
+                color: rgba(0,0,0,0.78);
+                height: 44px; /* Adjusted height */
+                line-height: 44px;
+            }
+
+                .sidenav li > a:not(.collapsible-header) > i.material-icons {
+                    margin-right: 26px; /* Adjusted margin */
+                    color: rgba(0,0,0,0.6);
+                    line-height: 44px;
+                }
+
+                .sidenav li > a:not(.collapsible-header):hover {
+                    background-color: rgba(0,0,0,0.04);
+                }
+
+            .sidenav li.active,
+            .sidenav li a.active-link.collapsible-header {
+                background-color: #b2dfdb; /* teal lighten-4 */
+            }
+
+                .sidenav li.active > a:not(.collapsible-header),
+                .sidenav li a.active-link:not(.collapsible-header) {
+                    background-color: #e0f2f1; /* teal lighten-5 */
+                    color: #00695c; /* teal darken-3 */
+                    font-weight: 500;
+                }
+
+                    .sidenav li.active > a:not(.collapsible-header) > i.material-icons,
+                    .sidenav li a.active-link:not(.collapsible-header) > i.material-icons {
+                        color: #00695c;
+                    }
+
+            /* Collapsible Items */
+            .sidenav .collapsible-header {
+                font-weight: 500;
+                padding: 0 24px;
+                display: flex;
+                align-items: center;
+                height: 44px;
+                line-height: 44px;
+                color: rgba(0,0,0,0.78);
+            }
+
+                .sidenav .collapsible-header i.material-icons {
+                    margin-right: 26px;
+                    color: rgba(0,0,0,0.6);
+                    line-height: 44px;
+                }
+
+            .sidenav li.active .collapsible-header {
+                background-color: #b2dfdb;
+                color: #00695c;
+            }
+
+                .sidenav li.active .collapsible-header i.material-icons {
+                    color: #00695c;
+                }
+
+            .sidenav .collapsible-body {
+                background-color: #f8f8f8; /* Slightly off-white for sub-items */
+            }
+
+                .sidenav .collapsible-body li a {
+                    padding: 0 24px 0 66px; /* Indent: 24px + icon(24) + margin(18) */
+                    font-size: 0.85rem;
+                    height: 40px;
+                    line-height: 40px;
+                    color: rgba(0,0,0,0.7);
+                }
+
+                    .sidenav .collapsible-body li a:hover {
+                        background-color: rgba(0,0,0,0.03);
+                    }
+
+                    .sidenav .collapsible-body li.active > a,
+                    .sidenav .collapsible-body li a.active-link {
+                        background-color: #a7ffeb !important; /* teal accent-1 */
+                        color: #004d40 !important; /* teal darken-4 */
+                        font-weight: 500;
+                    }
+
+                    .sidenav .collapsible-body li a.teal-text { /* From your JS */
+                        color: #00796b !important;
+                    }
+
+                .sidenav .collapsible-body li.active a.teal-text {
+                    color: #004d40 !important;
+                }
+
+        /* Footer Styling */
+        .page-footer.blue-grey.darken-2 {
+            padding-top: 25px;
+            background-color: #455a64 !important;
+        }
+
+        .page-footer h5 {
+            font-size: 1.2rem; /* Adjusted */
+            font-weight: 500;
+            margin-bottom: 15px; /* Adjusted */
+        }
+
+        .page-footer p, .page-footer ul li {
+            font-size: 0.88rem; /* Adjusted */
+            line-height: 1.65; /* Adjusted */
+        }
+
+        .footer-copyright.blue-grey.darken-3 {
+            background-color: #37474f !important;
+            padding: 15px 0;
+            font-size: 0.82rem; /* Adjusted */
+        }
+
+        .page-footer .grey-text.text-lighten-3:hover {
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="secureLayout">
+        <nav class="top-nav white-text z-depth-1">
+            <div class="nav-wrapper">
+                @* Bỏ .row và .col s12 bên trong đi cho đơn giản *@
+                <a href="#" data-target="admin-sidenav" class="sidenav-trigger hide-on-large-only white-text"><i class="material-icons">menu</i></a>
+                <h5 class="page-title truncate">@ViewData["Title"]</h5>
+            </div>
+        </nav>
+    </header>
+
+    <ul id="admin-sidenav" class="sidenav sidenav-fixed collapsible" data-collapsible="accordion">
+        <li>
+            <div class="user-view">
+                <img class="circle responsive-img"
+                     src="@userAvatarUrl"
+                     alt="User Avatar"
+                     onerror="this.onerror=null; this.src='/images/default-user-avatar.png';" />
+                <span class="name">@userFullName</span> @* Bỏ class black-text, CSS sẽ xử lý màu *@
+                <span class="email">@userEmail</span> @* Bỏ class black-text *@
+            </div>
+        </li>
+
+        @await Component.InvokeAsync("ASC_Web.Navigation.LeftNavigation", new { menuData = navigationMenuData })
+
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <li><div class="divider"></div></li>
+            <li><a href="/Identity/Account/Login" class="waves-effect"><i class="material-icons">login</i>Đăng nhập</a></li>
+        }
+    </ul>
+
+    <main class="secureLayout">
+        <div class="container">
+            <div class="row margin-bottom-0px">
+                <div class="col s12">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer blue-grey darken-2 secureLayout">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">@hotelNameFooter</h5>
+                    <p class="grey-text text-lighten-4">Nâng cao hiệu quả quản lý khách sạn của bạn.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liên kết nhanh</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ công khai</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Hỗ trợ</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Điều khoản dịch vụ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue-grey darken-3">
+            <div class="container">
+                © @DateTime.Now.Year @applicationTitle. Đã đăng ký bản quyền.
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com" target="_blank">Powered by Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="~/js/materialize.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var sidenavElems = document.querySelectorAll('.sidenav');
+            var sidenavInstances = M.Sidenav.init(sidenavElems, {
+                edge: 'left'
+            });
+
+            var collapsibleElems = document.querySelectorAll('#admin-sidenav.collapsible'); // Chỉ khởi tạo collapsible cho admin-sidenav
+            var collapsibleInstances = M.Collapsible.init(collapsibleElems, {
+                accordion: true
+            });
+
+            var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdownElems, { hover: false, constrainWidth: false });
+
+            var modalElems = document.querySelectorAll('.modal');
+            M.Modal.init(modalElems);
+
+            var path = window.location.pathname;
+            var sidenavRoot = document.getElementById('admin-sidenav');
+            if (sidenavRoot) {
+                var sidenavLinks = sidenavRoot.querySelectorAll('a[href]');
+
+                sidenavLinks.forEach(function(link) {
+                    var linkHref = link.getAttribute('href');
+                    if (!linkHref || linkHref === "#!" || linkHref.startsWith("javascript:")) return;
+
+                    var isActive = false;
+                    var currentPath = path.toLowerCase();
+                    var currentLinkHref = linkHref.toLowerCase();
+
+                    // Xử lý trường hợp đặc biệt cho link trang chủ của dashboard (ví dụ)
+                    // Nếu trang chủ dashboard của bạn là "/someArea/Dashboard" và linkHref là như vậy:
+                    if (currentPath === "/" && currentLinkHref === "/servicerequests/dashboard/dashboard") { // Cập nhật link dashboard chính xác
+                        isActive = true;
+                    } else if (currentLinkHref !== "/" && currentPath.startsWith(currentLinkHref)) {
+                        // Đảm bảo không active cha nếu con đang active trừ khi cha là link chính xác
+                        if (currentPath.length === currentLinkHref.length || currentPath[currentLinkHref.length] === '/') {
+                           isActive = true;
+                        }
+                    } else if (currentLinkHref === currentPath) {
+                         isActive = true;
+                    }
+
+                    if (isActive) {
+                        link.classList.add('active-link');
+                        var parentLi = link.closest('li');
+                        if (parentLi) {
+                             parentLi.classList.add('active');
+                        }
+
+                        var collapsibleBody = link.closest('.collapsible-body');
+                        if (collapsibleBody) {
+                            var collapsibleItemLi = collapsibleBody.parentElement; // LI chứa collapsible-header và collapsible-body
+
+                            if(collapsibleItemLi && collapsibleItemLi.parentElement && collapsibleItemLi.parentElement.classList.contains('collapsible')){
+                                var collapsibleInstance = M.Collapsible.getInstance(collapsibleItemLi.parentElement);
+                                if(collapsibleInstance){
+                                    var directChildrenLis = Array.from(collapsibleItemLi.parentElement.children).filter(child => child.tagName === 'LI');
+                                    var indexToOpen = directChildrenLis.indexOf(collapsibleItemLi);
+
+                                    if(indexToOpen !== -1 && !collapsibleInstance.isOpen(indexToOpen)){
+                                         collapsibleInstance.open(indexToOpen);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

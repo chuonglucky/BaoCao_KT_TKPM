@@ -1,0 +1,355 @@
+﻿@using Microsoft.Extensions.Options
+@using ASC_Web.Configuration
+@using System.Security.Claims
+@inject IOptions<ApplicationSettings> _hotelSettingsAccessor
+
+@{
+    var applicationTitle = _hotelSettingsAccessor?.Value?.ApplicationTitle ?? "Quản Lý Khách Sạn";
+    var hotelName = _hotelSettingsAccessor?.Value?.HotelName ?? applicationTitle;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>@applicationTitle - @ViewData["Title"]</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link rel="icon" type="image/x-icon" href="~/lib/favicon.ico">
+
+    <style>
+        /* General Body & Layout */
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #f4f4f4; /* grey lighten-4 or a similar light grey */
+            font-family: 'Roboto', sans-serif; /* Ensure Roboto is primary */
+        }
+
+        main.main-content-area {
+            flex: 1 0 auto; /* Key for sticky footer */
+            padding-top: 25px;
+            padding-bottom: 35px;
+        }
+
+        /* Navbar Customizations */
+        nav.teal.darken-2 { /* Hoặc màu primary của bạn */
+            /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); */ /* Thêm shadow nếu muốn rõ hơn */
+        }
+
+        .nav-wrapper .brand-logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem; /* Điều chỉnh kích thước chữ logo */
+            font-weight: 500; /* Độ đậm chữ logo */
+            padding-left: 10px; /* Thêm padding nếu cần */
+        }
+
+        .brand-logo img {
+            height: 42px; /* Tăng nhẹ chiều cao logo */
+            width: auto;
+            margin-right: 12px;
+        }
+
+        .brand-logo .logo-text-truncate {
+            /* Có thể bỏ truncate nếu không gian đủ hoặc xử lý bằng CSS ellipsis nếu cần */
+            white-space: nowrap;
+        }
+
+        nav ul a {
+            font-size: 0.95rem; /* Cỡ chữ cho nav items */
+            padding: 0 18px; /* Khoảng cách các nav items */
+            display: flex; /* Để icon và text căn giữa */
+            align-items: center;
+        }
+
+            nav ul a:hover {
+                background-color: rgba(255,255,255,0.1); /* Hiệu ứng hover nhẹ nhàng */
+            }
+
+            nav ul a .material-icons.left {
+                margin-right: 8px; /* Khoảng cách icon và text */
+            }
+
+            nav ul a .material-icons.right { /* Cho mũi tên dropdown */
+                margin-left: 5px;
+            }
+
+        /* User Dropdown */
+        .dropdown-content {
+            border-radius: 4px; /* Bo góc nhẹ cho dropdown */
+            min-width: 220px !important; /* Độ rộng tối thiểu cho dropdown */
+        }
+
+            .dropdown-content li > a, .dropdown-content li > span {
+                font-size: 0.9rem;
+                color: #00695c; /* teal darken-3, cho chữ trong dropdown */
+                padding: 12px 18px; /* Padding cho item trong dropdown */
+                display: flex;
+                align-items: center;
+            }
+
+                .dropdown-content li > a > i.material-icons {
+                    margin-right: 15px; /* Khoảng cách icon trong dropdown */
+                    color: #00796b; /* teal darken-2 */
+                }
+
+            .dropdown-content li:hover {
+                background-color: #e0f2f1; /* teal lighten-5, hover effect */
+            }
+
+            .dropdown-content .divider {
+                margin: 5px 0; /* Thu nhỏ divider */
+            }
+
+        /* Sidenav Mobile Trigger */
+        .sidenav-trigger i.material-icons {
+            font-size: 2rem; /* Kích thước icon menu mobile */
+        }
+
+        /* Footer Customizations */
+        .page-footer {
+            padding-top: 30px; /* Tăng padding trên của footer */
+            background-color: #37474f; /* blue-grey darken-3 */
+        }
+
+            .page-footer h5 {
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .page-footer p, .page-footer ul li {
+                font-size: 0.9rem; /* Cỡ chữ nội dung footer */
+                line-height: 1.8; /* Giãn dòng */
+            }
+
+            .page-footer .grey-text.text-lighten-4 {
+                color: #bdbdbd !important; /* Màu chữ mô tả footer */
+            }
+
+            .page-footer .grey-text.text-lighten-3 {
+                color: #e0e0e0 !important; /* Màu chữ link footer */
+            }
+
+            .page-footer ul li a:hover {
+                color: #ffffff !important; /* Màu chữ link footer khi hover */
+                text-decoration: underline;
+            }
+
+            .page-footer .material-icons.tiny.left {
+                position: relative;
+                top: 4px; /* Căn icon với text */
+                margin-right: 8px;
+            }
+
+        .footer-copyright {
+            background-color: #263238 !important; /* blue-grey darken-4 */
+            padding: 18px 0; /* Padding cho copyright */
+            font-size: 0.85rem;
+        }
+
+            .footer-copyright a.grey-text.text-lighten-4.right:hover {
+                color: #ffffff !important;
+            }
+
+        /* General UI Enhancements */
+        .card { /* Style chung cho card nếu bạn dùng nhiều */
+            border-radius: 6px;
+        }
+        /* Thêm style cho các link hoặc button nếu cần */
+        a {
+            /* transition: color 0.2s ease-in-out; */ /* Hiệu ứng chuyển màu nhẹ cho link */
+        }
+
+        /* Scrollbar styling (Optional, for modern look - Webkit browsers) */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 10px;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #a1a1a1;
+            }
+
+    </style>
+</head>
+<body class="grey lighten-4">
+    <a id="top-of-page"></a> @* Anchor cho nút #TOP *@
+    <header>
+        <nav class="teal darken-2 white-text" role="navigation">
+            @* Bạn có thể đổi màu ở đây, ví dụ: blue-grey darken-1 *@
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="@Url.Action("Index", "Home")" class="brand-logo">
+                    <img src="~/images/logo.png" alt="Logo"> @* Đảm bảo đường dẫn logo đúng *@
+                    <span class="logo-text-truncate">Hotel Web</span>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="@Url.Action("Index", "Home")"><i class="material-icons left">home</i>Trang Chủ</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <a class="dropdown-trigger" href="#!" data-target="dropdown-user-main">
+                                <i class="material-icons left">account_circle</i>@User.FindFirstValue(ClaimTypes.Name ?? "User")<i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="/Identity/Account/Login"><i class="material-icons left">login</i>Đăng Nhập</a></li>
+                    }
+                </ul>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <ul id="dropdown-user-main" class="dropdown-content">
+                        <li><a href="/Identity/Account/Manage/Index" class="teal-text text-darken-3"><i class="material-icons">person_outline</i>Thông Tin Cá Nhân</a></li>
+                        @* <li><a href="#!user-settings" class="teal-text text-darken-3"><i class="material-icons">settings</i>Cài Đặt</a></li> *@
+                        <li class="divider" tabindex="-1"></li>
+                        <li>
+                            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutFormLayoutDesktop">
+                                <a href="#" onclick="document.getElementById('logoutFormLayoutDesktop').submit(); return false;" class="teal-text text-darken-3">
+                                    <i class="material-icons">exit_to_app</i>Đăng Xuất
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                }
+                @* Sidenav Mobile - Cần có HTML cho nó, ví dụ: *@
+                <ul id="nav-mobile-main" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="~/images/background_sidenav.jpg"> @* Ảnh nền cho sidenav user view *@
+                            </div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a href="#user"><img class="circle" src="~/images/avatar_default.png"></a> @* Ảnh avatar *@
+                                <a href="#name"><span class="white-text name">@User.FindFirstValue(ClaimTypes.Name ?? "User")</span></a>
+                                <a href="#email"><span class="white-text email">@User.FindFirstValue(ClaimTypes.Email ?? "email@example.com")</span></a>
+                            }
+                            else
+                            {
+                                <a href="#user"><img class="circle" src="~/images/avatar_guest.png"></a>
+                                <a href="#name"><span class="white-text name">Khách</span></a>
+                            }
+                        </div>
+                    </li>
+                    <li><a href="@Url.Action("Index", "Home")" class="waves-effect"><i class="material-icons">home</i>Trang Chủ</a></li>
+                    <li><a href="@Url.Action("Index", "Dashboard")" class="waves-effect"><i class="material-icons">dashboard</i>Bảng Điều Khiển</a></li>
+                    <li><div class="divider"></div></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a class="subheader">Tài khoản</a></li>
+                        <li><a href="/Identity/Account/Manage/Index" class="waves-effect"><i class="material-icons">person_outline</i>Thông Tin Cá Nhân</a></li>
+                        <li>
+                            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutFormLayoutMobile">
+                                <a href="#" onclick="document.getElementById('logoutFormLayoutMobile').submit(); return false;" class="waves-effect">
+                                    <i class="material-icons">exit_to_app</i>Đăng Xuất
+                                </a>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="/Identity/Account/Login" class="waves-effect"><i class="material-icons">login</i>Đăng Nhập</a></li>
+                        <li><a href="/Identity/Account/Register" class="waves-effect"><i class="material-icons">person_add</i>Đăng Ký</a></li>
+                    }
+                </ul>
+                <a href="#" data-target="nav-mobile-main" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content-area">
+        <div class="container">
+            @* Thêm container ở đây để giới hạn chiều rộng nội dung renderbody *@
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        @* Đã đổi màu ở CSS trên *@
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">@hotelName</h5>
+                    <p class="grey-text text-lighten-4">
+                        <i class="material-icons tiny left">location_on</i>Địa chỉ: Đại học Thủ Dầu Một, P. Phú Hòa, TP. Thủ Dầu Một, Bình Dương.<br>
+                        <i class="material-icons tiny left">phone</i>Điện thoại: (0274) 382 2518 (Ví dụ)<br>
+                        <i class="material-icons tiny left">email</i>Email: ngominhtri290820@@gmail.com
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    @* Điều chỉnh cột cho cân đối hơn *@
+                    <h5 class="white-text">Liên Kết Nhanh</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="@Url.Action("About", "Home")">Về Chúng Tôi</a></li>
+                        <li><a class="grey-text text-lighten-3" href="@Url.Action("PrivacyPolicy", "Home")">Chính Sách Bảo Mật</a></li>
+                        <li><a class="grey-text text-lighten-3" href="@Url.Action("Contact", "Home")">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            @* Đã đổi màu ở CSS trên *@
+            <div class="container">
+                &copy; @DateTime.Now.Year @hotelName. Phát triển bởi Ngô Minh Trí.
+                <a class="grey-text text-lighten-4 right tooltipped" data-position="top" data-tooltip="Lên đầu trang" href="#top-of-page">#TOP</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="~/js/materialize.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidenavElems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavElems, { edge: 'left' }); // Chỉ định edge
+
+            var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdownElems, {
+                constrainWidth: false,
+                coverTrigger: false,
+                alignment: 'right',
+                hover: false, // Click để mở, không phải hover
+                closeOnClick: true // Tự đóng khi click vào item
+            });
+
+            var parallaxElems = document.querySelectorAll('.parallax');
+            if (parallaxElems.length > 0) { M.Parallax.init(parallaxElems); }
+
+            var tooltipElems = document.querySelectorAll('.tooltipped');
+            M.Tooltip.init(tooltipElems, { exitDelay: 50, enterDelay: 200 }); // Điều chỉnh delay
+
+            var topLink = document.querySelector('a[href="#top-of-page"]');
+            if (topLink) {
+                topLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            // Khởi tạo các thành phần Materialize khác nếu bạn có (ví dụ: Modals, Collapsibles,...)
+            M.updateTextFields(); // Gọi sau khi load để cập nhật trạng thái label cho input
+        });
+    </script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

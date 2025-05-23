@@ -1,0 +1,13 @@
+{
+    "AppSettings": {
+        "ApplicationTitle": "Hotel Management System Production Application"
+    },
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Warning",
+            "System": "Information",
+            "Microsoft": "Information"
+        }
+    }
+}

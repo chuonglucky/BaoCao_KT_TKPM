@@ -1,0 +1,514 @@
+﻿@using ASC.Model.BaseTypes
+@model ASC_Web.Areas.Accounts.Models.StaffManagementViewModel
+@{
+    ViewData["Title"] = "Quản lý Nhân viên";
+    Layout = "_SecureLayout";
+}
+
+<style>
+    .status-box {
+        padding: 6px 8px;
+        border-radius: 3px;
+        color: white;
+        text-align: center;
+        line-height: 1.2;
+        display: inline-block;
+        min-width: 70px;
+        font-size: 0.85em;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .status-box-active {
+        background-color: #66bb6a; /* green lighten-1 */
+    }
+
+    .status-box-inactive {
+        background-color: #ef5350; /* red lighten-1 */
+    }
+
+    .margin-bottom-10px {
+        margin-bottom: 10px !important;
+    }
+
+    td.actions-cell .btn-floating.btn-small { /* Điều chỉnh margin cho nút floating */
+        margin: 0 3px;
+    }
+
+    .caption strong {
+        font-weight: bold;
+    }
+
+    .responsive-table-wrapper {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+        white-space: nowrap;
+    }
+
+        .responsive-table td.actions-cell {
+            white-space: nowrap;
+        }
+
+    .table-title-and-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+        .table-title-and-actions .card-title {
+            margin: 0;
+            margin-right: 10px;
+        }
+
+    .export-button-container .btn {
+        padding: 0 1rem;
+    }
+
+    media (max-width: 600px) {
+        .table-title-and-actions
+
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-title-and-actions .card-title {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .export-button-container .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    }
+</style>
+
+<div class="container" style="margin-top:20px;">
+    <h4 class="blue-grey-text text-darken-2">@ViewData["Title"]</h4>
+    <div class="divider"></div>
+
+    <div class="row" style="margin-top:15px;">
+        @if (TempData["Message"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel teal lighten-2 white-text z-depth-1" onclick="this.style.display='none'" style="cursor:pointer;">
+                    <i class="material-icons left tiny">check_circle</i>@Html.Raw(TempData["Message"])
+                </div>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel red lighten-2 white-text z-depth-1" onclick="this.style.display='none'" style="cursor:pointer;">
+                    <i class="material-icons left tiny">error_outline</i>@Html.Raw(TempData["ErrorMessage"])
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (User.IsInRole(Roles.Admin.ToString()))
+    {
+        <div class="row">
+            <div class="col s12">
+                <div class="card z-depth-1">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-1">Import Nhân viên từ Excel</span>
+                        <form asp-controller="Account" asp-action="ImportStaffAccounts" method="post" enctype="multipart/form-data" class="col s12" style="margin-top: 15px;">
+                            @Html.AntiForgeryToken()
+                            <div class="row valign-wrapper">
+                                <div class="file-field input-field col s12 m8 l9">
+                                    <div class="btn waves-effect waves-light blue-grey lighten-1">
+                                        <span>Chọn File</span>
+                                        <input type="file" name="excelFile" accept=".xlsx" required>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload file .xlsx (tối đa 5MB)">
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 m4 l3 right-align">
+                                    <button class="btn waves-effect waves-light green darken-1" type="submit" style="margin-top:5px;">
+                                        Import <i class="material-icons right">file_upload</i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col s12">
+                                    <p class="caption" style="font-size:0.9rem;">
+                                        <strong>Hướng dẫn:</strong> File Excel (.xlsx) phải có 5 cột theo thứ tự: <br />
+                                        1. <strong>UserName</strong> (Tên đăng nhập) <br />
+                                        2. <strong>Email</strong> <br />
+                                        3. <strong>Password</strong> (Mật khẩu, tối thiểu 6 ký tự) <br />
+                                        4. <strong>RoleToAssign</strong> (Vai trò, ví dụ: Manager, Receptionist, Housekeeping. Phải là vai trò nhân viên hợp lệ) <br />
+                                        5. <strong>IsActive</strong> (Trạng thái, nhập: TRUE hoặc FALSE) <br />
+                                        Dòng đầu tiên của file Excel (tiêu đề) sẽ được bỏ qua.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card z-depth-2">
+                <div class="card-content">
+                    <div class="table-title-and-actions">
+                        <span class="card-title grey-text text-darken-1">Danh sách Nhân viên</span>
+                        @if (User.IsInRole(Roles.Admin.ToString()) || User.IsInRole(Roles.Manager.ToString()))
+                        {
+                            <div class="export-button-container">
+                                <a asp-action="ExportStaffToExcel" asp-controller="Account" asp-area="Accounts"
+                                   class="btn waves-effect waves-light indigo lighten-1 tooltipped"
+                                   data-position="top" data-tooltip="Xuất danh sách nhân viên ra Excel">
+                                    <i class="material-icons left hide-on-small-only">file_download</i>
+                                    <span class="hide-on-small-only">Xuất Excel</span>
+                                    <i class="material-icons center-align hide-on-med-and-up">file_download</i>
+                                </a>
+                            </div>
+                        }
+                    </div>
+
+                    @if (Model.DisplayStaff != null && Model.DisplayStaff.Any())
+                    {
+                        <div class="responsive-table-wrapper">
+                            <table class="striped highlight responsive-table" id="tblStaffAccounts">
+                                <thead>
+                                    <tr>
+                                        <th style="vertical-align: middle;">Tên đăng nhập</th>
+                                        <th style="vertical-align: middle;">Email</th>
+                                        <th style="vertical-align: middle;">Vai trò</th>
+                                        <th class="center-align" style="vertical-align: middle;">Trạng thái</th>
+                                        @if (User.IsInRole(Roles.Admin.ToString()))
+                                        {
+                                            <th class="center-align" style="vertical-align: middle; min-width: 120px;">Hành động</th>
+                                        }
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var staff in Model.DisplayStaff.OrderBy(s => s.UserName))
+                                    {
+                                        <tr>
+                                            <td style="vertical-align: middle;">@staff.UserName</td>
+                                            <td style="vertical-align: middle;">@staff.Email</td>
+                                            <td style="vertical-align: middle;">
+                                                <span class="chip grey lighten-3 black-text">@staff.Role</span>
+                                            </td>
+                                            <td class="center-align" style="vertical-align: middle;">
+                                                @if (staff.IsActive)
+                                                {
+                                                    <div class="status-box status-box-active tooltipped" data-position="top" data-tooltip="Đang hoạt động">Hoạt động</div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="status-box status-box-inactive tooltipped" data-position="top" data-tooltip="Đã vô hiệu hóa">Vô hiệu</div>
+                                                }
+                                            </td>
+                                            @if (User.IsInRole(Roles.Admin.ToString()))
+                                            {
+                                                <td class="center-align actions-cell" style="vertical-align: middle;">
+                                                    <button class="btn-floating btn-small waves-effect waves-light orange darken-1 edit-staff tooltipped"
+                                                            data-position="top" data-tooltip="Sửa thông tin"
+                                                            data-userid="@staff.UserId"
+                                                            data-email="@staff.Email"
+                                                            data-username="@staff.UserName"
+                                                            data-role="@staff.Role"
+                                                            data-isactive="@staff.IsActive.ToString().ToLower()">
+                                                        <i class="material-icons">edit</i>
+                                                    </button>
+                                                    <form asp-action="DeleteStaffAccount" asp-controller="Account" asp-area="Accounts" method="post" style="display:inline-block;"
+                                                          onsubmit="return confirm('Bạn có chắc chắn muốn xóa nhân viên @staff.UserName (@staff.Email)? Hành động này không thể hoàn tác.');">
+                                                        <input type="hidden" name="userId" value="@staff.UserId" />
+                                                        @Html.AntiForgeryToken()
+                                                        <button type="submit" class="btn-floating btn-small waves-effect waves-light red darken-1 tooltipped"
+                                                                data-position="top" data-tooltip="Xóa nhân viên">
+                                                            <i class="material-icons">delete_forever</i>
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="flow-text grey-text center-align" style="padding:20px;">Không có nhân viên nào để hiển thị.</p>
+                    }
+                    @if (!User.IsInRole(Roles.Admin.ToString()) && User.IsInRole(Roles.Manager.ToString()))
+                    {
+                        <p style="margin-top:15px;" class="grey-text"><em>Bạn đang xem danh sách nhân viên. Chức năng quản lý tài khoản nhân viên dành cho Quản trị viên.</em></p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (User.IsInRole(Roles.Admin.ToString()))
+    {
+        <div class="row">
+            <div class="col s12">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title grey-text text-darken-1" id="formTitleStaff">Thêm Nhân viên mới</span>
+                        <form asp-controller="Account" asp-action="StaffAccounts" method="post" class="col s12" id="staffForm" style="margin-top: 15px;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" asp-for="Registration.IsEdit" />
+                            <input type="hidden" asp-for="Registration.UserId" id="Registration_UserId_Staff" />
+
+                            @if (!ViewData.ModelState.IsValid)
+                            {
+                                <div class="card-panel red lighten-4 red-text text-darken-4" style="margin-bottom:20px; padding:15px;">
+                                    <div asp-validation-summary="ModelOnly"></div>
+                                    @* Hiển thị lỗi cụ thể cho từng trường nếu có *@
+                                    @foreach (var key in ViewData.ModelState.Keys.Where(k => ViewData.ModelState[k].Errors.Any()))
+                                    {
+                                        foreach (var error in ViewData.ModelState[key].Errors)
+                                        {
+                                            <p><i class="material-icons tiny left">error_outline</i> @error.ErrorMessage</p>
+                                        }
+                                    }
+                                </div>
+                            }
+
+
+                            <div class="row margin-bottom-10px">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input asp-for="Registration.Email" id="Registration_Email_Staff" class="validate" />
+                                    <label asp-for="Registration.Email">Email</label>
+                                    <span asp-validation-for="Registration.Email" class="helper-text" data-error="Email không hợp lệ hoặc đã tồn tại" data-success="Hợp lệ"></span>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-10px">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input asp-for="Registration.UserName" id="Registration_UserName_Staff" class="validate" />
+                                    <label asp-for="Registration.UserName">Tên đăng nhập</label>
+                                    <span asp-validation-for="Registration.UserName" class="helper-text" data-error="Tên đăng nhập không hợp lệ hoặc đã tồn tại" data-success="Hợp lệ"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-10px" id="roleSectionStaff">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">supervisor_account</i>
+                                    <select asp-for="Registration.RoleToAssign" asp-items="Model.AvailableRoles" id="Registration_RoleToAssign_Staff">
+                                        <option value="" disabled selected="@(string.IsNullOrEmpty(Model.Registration.RoleToAssign))">Chọn vai trò</option>
+                                    </select>
+                                    <label asp-for="Registration.RoleToAssign">Vai trò</label>
+                                    <span asp-validation-for="Registration.RoleToAssign" class="helper-text" data-error="Vui lòng chọn vai trò"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom-10px" id="passwordSectionStaff">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input asp-for="Registration.Password" id="Registration_Password_Staff" type="password" class="validate" />
+                                    <label asp-for="Registration.Password">Mật khẩu (bắt buộc khi tạo mới)</label>
+                                    <span asp-validation-for="Registration.Password" class="helper-text" data-error="Mật khẩu phải có ít nhất 6 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt." data-success=""></span>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-10px" id="confirmPasswordSectionStaff">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_outline</i>
+                                    <input asp-for="Registration.ConfirmPassword" id="Registration_ConfirmPassword_Staff" type="password" class="validate" />
+                                    <label asp-for="Registration.ConfirmPassword">Xác nhận mật khẩu</label>
+                                    <span asp-validation-for="Registration.ConfirmPassword" class="helper-text" data-error="Mật khẩu xác nhận không khớp." data-success=""></span>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-10px">
+                                <div class="input-field col s12" style="margin-top: 20px;">
+                                    <div class="switch">
+                                        <label>
+                                            Vô hiệu hóa
+                                            <input type="checkbox" asp-for="Registration.IsActive" id="Registration_IsActive_Staff">
+                                            <span class="lever"></span>
+                                            Hoạt động
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-action right-align" style="margin-top:20px; padding-right:0;">
+                                <button class="btn waves-effect waves-light grey lighten-1 black-text reset-staff-form" type="button">
+                                    Làm mới <i class="material-icons right">clear</i>
+                                </button>
+                                <button class="btn waves-effect waves-light btnSubmitStaff blue darken-1" type="submit" name="action" id="submitButtonStaff">
+                                    Tạo mới <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            M.updateTextFields();
+            $('select').formSelect();
+            $('.tooltipped').tooltip({ exitDelay: 50 }); // Thêm exitDelay
+
+            function clearStaffValidationErrors() {
+                $('#staffForm .card-panel.red').remove(); // Xóa panel lỗi cũ
+                $('#staffForm .input-field input.invalid').removeClass('invalid');
+                $('#staffForm .input-field select.invalid').removeClass('invalid');
+                $('#staffForm .input-field .helper-text[data-error]').text(''); // Xóa helper text lỗi cũ
+                $('#staffForm .input-validation-error').removeClass('input-validation-error');
+            }
+
+            function resetStaffFormToAddMode() {
+                $('#staffForm')[0].reset();
+                clearStaffValidationErrors();
+
+                $('#Registration_IsEdit').val('false');
+                $('#Registration_UserId_Staff').val('');
+
+                $('#Registration_Email_Staff').prop('readonly', false).removeClass('grey-text text-darken-1');
+                $('#Registration_UserName_Staff').prop('readonly', false).removeClass('grey-text text-darken-1');
+
+                $('#Registration_RoleToAssign_Staff').val(''); // Reset dropdown
+                $('#Registration_RoleToAssign_Staff').prop('disabled', false);
+
+
+                $('#passwordSectionStaff').show();
+                $('#confirmPasswordSectionStaff').show();
+                $('#Registration_Password_Staff').val('');
+                $('#Registration_ConfirmPassword_Staff').val('');
+                $('#Registration_Password_Staff').next('label').text('Mật khẩu (bắt buộc khi tạo mới)');
+
+                $('#Registration_IsActive_Staff').prop('checked', true);
+
+                $('#formTitleStaff').text('Thêm Nhân viên mới');
+                $('#submitButtonStaff').html('Tạo mới <i class="material-icons right">send</i>').removeClass('green').addClass('blue darken-1');
+
+                M.updateTextFields(); // Cập nhật lại label sau khi reset
+                $('select#Registration_RoleToAssign_Staff').formSelect(); // Khởi tạo lại select
+            }
+
+            $('.reset-staff-form').on('click', function () {
+                resetStaffFormToAddMode();
+            });
+
+            $('.edit-staff').on('click', function () {
+                clearStaffValidationErrors();
+
+                var userId = $(this).data('userid');
+                var email = $(this).data('email');
+                var userName = $(this).data('username');
+                var role = $(this).data('role');
+                var isActive = $(this).data('isactive').toString() === 'true';
+
+                $('#Registration_IsEdit').val('true');
+                $('#Registration_UserId_Staff').val(userId);
+
+                $('#Registration_Email_Staff').val(email).prop('readonly', true).addClass('grey-text text-darken-1'); // Không cho sửa email
+                $('#Registration_UserName_Staff').val(userName);
+
+                $('#Registration_RoleToAssign_Staff').val(role);
+                $('#Registration_RoleToAssign_Staff').prop('disabled', false); // Cho phép thay đổi role
+
+                // Mật khẩu không bắt buộc khi sửa, chỉ nhập nếu muốn đổi
+                $('#passwordSectionStaff').show();
+                $('#confirmPasswordSectionStaff').show();
+                $('#Registration_Password_Staff').val('');
+                $('#Registration_ConfirmPassword_Staff').val('');
+                $('#Registration_Password_Staff').next('label').text('Mật khẩu mới (để trống nếu không đổi)');
+
+
+                $('#Registration_IsActive_Staff').prop('checked', isActive);
+
+                $('#formTitleStaff').text('Cập nhật Thông tin Nhân viên: ' + userName);
+                $('#submitButtonStaff').html('Cập nhật <i class="material-icons right">save</i>').removeClass('blue darken-1').addClass('green');
+
+                M.updateTextFields(); // Quan trọng để label di chuyển đúng
+                $('select#Registration_RoleToAssign_Staff').formSelect(); // Khởi tạo lại select
+
+                $('#Registration_UserName_Staff').focus(); // Focus vào trường có thể sửa đầu tiên
+                $('html, body').animate({
+                    scrollTop: $("#staffForm").offset().top - 70 // Cuộn đến form
+                }, 500);
+            });
+
+            // Kiểm tra và xử lý hiển thị form khi có lỗi validation từ server (sau khi POST)
+            var isEditModeOnError = $('#Registration_IsEdit').val() === 'true';
+            var hasErrors = !$('#staffForm div[asp-validation-summary="ModelOnly"]').hasClass('validation-summary-valid') ||
+                            $('#staffForm .input-validation-error').length > 0 ||
+                            $('#staffForm .helper-text.red-text:not(:empty)').length > 0;
+
+
+            if (hasErrors) {
+                if (isEditModeOnError) {
+                    $('#Registration_Email_Staff').prop('readonly', true).addClass('grey-text text-darken-1');
+                    $('#Registration_RoleToAssign_Staff').prop('disabled', false);
+                    $('#passwordSectionStaff').show();
+                    $('#confirmPasswordSectionStaff').show();
+                    $('#Registration_Password_Staff').next('label').text('Mật khẩu mới (để trống nếu không đổi)');
+                    $('#formTitleStaff').text('Cập nhật Thông tin Nhân viên: ' + $('#Registration_UserName_Staff').val());
+                    $('#submitButtonStaff').html('Cập nhật <i class="material-icons right">save</i>').removeClass('blue darken-1').addClass('green');
+                } else {
+                    // Giữ nguyên trạng thái form thêm mới nếu có lỗi
+                     $('#formTitleStaff').text('Thêm Nhân viên mới (Có lỗi, vui lòng kiểm tra)');
+                }
+                M.updateTextFields(); // Cập nhật lại label
+                $('select').formSelect(); // Khởi tạo lại select
+            }
+
+
+            // DataTable
+             if ($('#tblStaffAccounts tbody tr').length > 0) {
+                $('#tblStaffAccounts').DataTable({
+                    'pageLength': 10,
+                    'lengthMenu': [[10, 25, 50, -1], [10, 25, 50, 'Tất cả']],
+                    "language": {
+                        "lengthMenu": "Hiển thị _MENU_ mục",
+                        "zeroRecords": "Không tìm thấy nhân viên nào",
+                        "info": "Hiển thị trang _PAGE_ trên _PAGES_ (_TOTAL_ mục)",
+                        "infoEmpty": "Không có nhân viên nào",
+                        "infoFiltered": "(lọc từ _MAX_ tổng số mục)",
+                        "search": "Tìm kiếm:",
+                        "paginate": {
+                            "first": "Đầu",
+                            "last": "Cuối",
+                            "next": "Tiếp",
+                            "previous": "Trước"
+                        }
+                    },
+                    "columnDefs": [
+                        { "orderable": false, "targets": 4 } // Cột Hành động không sắp xếp
+                    ],
+                    responsive: true,
+                     "drawCallback": function( settings ) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 });
+                    }
+                });
+            }
+
+            // Tự động ẩn thông báo TempData
+            setTimeout(function() {
+                $('.card-panel.teal, .card-panel.red').fadeOut('slow', function() { $(this).remove(); });
+            }, 3500);
+        });
+    </script>
+}

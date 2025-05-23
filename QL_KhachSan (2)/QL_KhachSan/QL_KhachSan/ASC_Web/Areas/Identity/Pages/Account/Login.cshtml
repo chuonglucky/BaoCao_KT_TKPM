@@ -1,0 +1,312 @@
+﻿@page
+@using ASC_Web.Areas.Identity.Pages.Account
+@model LoginModel
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "/Views/Shared/_Layout.cshtml"; // Đảm bảo Layout này có Materialize CSS và JS
+}
+
+<style>
+    body { /* Thêm để đảm bảo không có margin/padding mặc định làm ảnh hưởng */
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2; /* Màu nền cho toàn trang nếu banner không che hết */
+    }
+
+    .banner {
+        width: 100%;
+        height: 300px; /* Hoặc 250px nếu muốn banner thấp hơn một chút */
+        background: url('/images/background1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .login-section {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Căn giữa card theo chiều dọc nếu nội dung không quá dài */
+        padding: 50px 20px; /* Tăng padding cho section */
+        background-color: #f2f2f2;
+        min-height: calc(100vh - 300px); /* Giữ nguyên hoặc điều chỉnh chiều cao banner */
+        box-sizing: border-box;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 480px; /* Tăng nhẹ max-width */
+        background-color: white;
+        padding: 35px 40px; /* Tăng padding */
+        border-radius: 8px; /* Giảm nhẹ bo góc cho hiện đại hơn */
+        /* Sử dụng box-shadow của Materialize z-depth-2 hoặc z-depth-3 */
+        box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    }
+
+        .login-card .card-title-custom { /* Class mới cho tiêu đề */
+            font-size: 1.8rem; /* Tăng kích thước chữ tiêu đề */
+            font-weight: 400;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px; /* Giảm margin dưới tiêu đề một chút */
+        }
+
+            .login-card .card-title-custom .material-icons {
+                margin-right: 10px;
+                font-size: 2.2rem; /* Kích thước icon lớn hơn */
+                color: #2196f3; /* Màu blue cho icon */
+            }
+
+        .login-card .divider {
+            margin: 25px 0; /* Tăng margin cho divider */
+        }
+
+    /* Validation Summary Panel */
+    .validation-summary-errors { /* class cho div asp-validation-summary */
+        background-color: #ffebee; /* red lighten-5 */
+        border: 1px solid #ef9a9a; /* red lighten-3 */
+        color: #c62828; /* red darken-3 */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+        .validation-summary-errors ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .validation-summary-errors li {
+            list-style-type: disc;
+        }
+
+
+    .login-card .input-field {
+        margin-bottom: 28px; /* Khoảng cách rõ ràng giữa các input */
+    }
+    /* Tùy chỉnh màu cho prefix icon khi focus/valid */
+    .input-field .prefix.active {
+        color: #2196f3; /* Màu blue khi active */
+    }
+
+    .remember-me-field { /* Class mới cho phần Ghi nhớ */
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+        .remember-me-field label span {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+    .btn-login { /* Class mới cho nút Đăng nhập chính */
+        width: 100%;
+        background-color: #1e88e5; /* blue darken-1, có thể dùng primary color của bạn */
+        color: white;
+        padding: 0 25px; /* Padding ngang */
+        line-height: 48px; /* Chiều cao nút */
+        height: 48px;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase; /* IN HOA chữ */
+        border-radius: 4px; /* Bo góc nhẹ */
+    }
+
+        .btn-login:hover {
+            background-color: #1565c0; /* blue darken-2 */
+        }
+
+        .btn-login .material-icons {
+            line-height: 48px; /* Căn giữa icon với text */
+        }
+
+    .login-links { /* Class mới cho cụm link */
+        margin-top: 20px;
+        margin-bottom: 25px; /* Khoảng cách trước divider */
+    }
+
+        .login-links a {
+            color: #1e88e5; /* blue darken-1 */
+            display: block;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+            .login-links a:hover {
+                color: #0d47a1; /* blue darken-4 */
+            }
+
+            .login-links a:last-child {
+                margin-bottom: 0;
+            }
+
+
+    .external-login-title { /* Class mới cho tiêu đề "Hoặc đăng nhập với" */
+        font-size: 0.95rem;
+        color: #757575; /* grey darken-1 */
+        margin-bottom: 20px;
+        margin-top: 5px; /* Sau divider */
+    }
+
+    .btn-provider {
+        width: 100%;
+        margin-bottom: 12px;
+        text-transform: none;
+        font-size: 0.95rem; /* Giảm nhẹ font */
+        padding: 0 15px;
+        line-height: 42px; /* Chiều cao nút */
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2); /* z-depth-1 */
+    }
+
+        .btn-provider:hover {
+            box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3); /* z-depth-1.5 */
+        }
+
+        .btn-provider .material-icons {
+            margin-right: 12px;
+            line-height: 42px; /* Căn giữa icon */
+        }
+
+    .btn-google {
+        background-color: #db4437 !important;
+        color: white !important;
+    }
+
+        .btn-google:hover {
+            background-color: #c23321 !important;
+        }
+    /* Nút cho các provider khác (nếu có) */
+    .btn-other-provider { /* Class mới */
+        background-color: #fff !important;
+        color: #555 !important;
+        border: 1px solid #ddd;
+    }
+
+        .btn-other-provider:hover {
+            background-color: #f9f9f9 !important;
+        }
+
+</style>
+
+<div class="banner"></div>
+
+<section class="login-section">
+    <div class="login-card">
+        <h5 class="card-title-custom"><i class="material-icons">lock_outline</i>Đăng nhập tài khoản</h5>
+        <div class="divider"></div>
+
+        @* Sửa class cho div validation summary *@
+        <div asp-validation-summary="ModelOnly" class="validation-summary-errors" role="alert"></div>
+
+        <form id="account" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input asp-for="Input.Email" type="email" class="validate" id="email" autocomplete="username" aria-required="true" />
+                <label asp-for="Input.Email" for="email">Địa chỉ Email</label>
+                <span asp-validation-for="Input.Email" class="helper-text" data-error="Vui lòng nhập email hợp lệ." data-success="Email hợp lệ"></span>
+            </div>
+
+            <div class="input-field">
+                <i class="material-icons prefix">vpn_key</i>
+                <input asp-for="Input.Password" type="password" class="validate" id="password" autocomplete="current-password" aria-required="true" />
+                <label asp-for="Input.Password" for="password">Mật khẩu</label>
+                <span asp-validation-for="Input.Password" class="helper-text" data-error="Vui lòng nhập mật khẩu."></span>
+            </div>
+
+            <div class="remember-me-field">
+                <label>
+                    <input asp-for="Input.RememberMe" type="checkbox" class="filled-in" />
+                    <span>@Html.DisplayNameFor(m => m.Input.RememberMe)</span>
+                </label>
+            </div>
+
+            <div class="center-align">
+                @* Sử dụng class mới cho nút đăng nhập *@
+                <button class="btn waves-effect waves-light btn-login" type="submit">
+                    ĐĂNG NHẬP
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+            <div class="login-links center-align">
+                <a asp-page="./ForgotPassword">Quên mật khẩu?</a>
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Đăng ký tài khoản mới</a>
+            </div>
+        </form>
+
+        @{
+            var loginProviders = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+            if (loginProviders.Count > 0)
+            {
+                <div class="divider"></div>
+                <h6 class="center-align external-login-title">Hoặc đăng nhập với</h6>
+                <form id="external-account" asp-page="./ExternalLogin" asp-route-returnurl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                    <div>
+                        @foreach (var provider in loginProviders)
+                        {
+                            string btnSpecificClass = "";
+                            string iconName = "login"; // Icon mặc định
+                            string providerDisplayName = provider.DisplayName; // Giữ nguyên DisplayName
+
+                            if (provider.Name.Equals("Google", StringComparison.OrdinalIgnoreCase))
+                            {
+                                btnSpecificClass = "btn-google";
+                                // Material Design Icons không có logo Google chính thức dạng icon font.
+                                // Bạn có thể dùng icon chung hoặc tìm SVG/ảnh. Ở đây dùng icon chung.
+                                iconName = "account_circle"; // Hoặc một icon khác phù hợp
+                            }
+                            else if (provider.Name.Equals("Facebook", StringComparison.OrdinalIgnoreCase))
+                            {
+                                // Tương tự, Material Design Icons không có logo Facebook.
+                                // btnSpecificClass = "btn-facebook"; // Bạn sẽ cần định nghĩa class này
+                                iconName = "facebook"; // Material Icons có icon này
+                                btnSpecificClass = "blue darken-3 white-text"; // Ví dụ màu Facebook
+                            }
+                            else
+                            {
+                                btnSpecificClass = "btn-other-provider";
+                            }
+
+                            <button type="submit" class="btn waves-effect waves-light btn-provider @btnSpecificClass" name="provider" value="@provider.Name" title="Đăng nhập bằng tài khoản @provider.DisplayName của bạn">
+                                <i class="material-icons left">@iconName</i> @providerDisplayName
+                            </button>
+                        }
+                    </div>
+                </form>
+            }
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Kích hoạt validation messages cho Materialize (nếu helper-text cần class 'active' để hiện)
+            // Tuy nhiên, aspnet validation thường tự xử lý việc này.
+            // M.updateTextFields(); // Gọi nếu label không float đúng cách ban đầu
+
+            // Nếu bạn muốn custom message cho validation summary
+             var validationSummary = $('.validation-summary-errors');
+             if (validationSummary.length > 0 && validationSummary.find('ul li').length === 0) {
+                 // Nếu chỉ có thông báo text, không có list item, có thể là lỗi không cụ thể
+                 if (validationSummary.text().trim() !== "") {
+                    // Do nothing, it already has content
+                 } else {
+                    validationSummary.hide(); // Ẩn nếu không có lỗi thực sự
+                 }
+             } else if (validationSummary.find('ul li').length === 0) {
+                validationSummary.hide(); // Ẩn nếu không có lỗi
+             }
+
+        });
+    </script>
+}

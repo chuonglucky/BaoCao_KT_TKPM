@@ -1,0 +1,205 @@
+﻿/* Styles for the redesigned Login Page */
+.login-page-wrapper {
+    background-image: url('../images/background1.jpg'); /* Path relative to CSS file */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 20px; /* Some padding for smaller screens */
+    box-sizing: border-box;
+}
+
+.login-container {
+    background-color: rgba(10, 25, 40, 0.85); /* Dark blueish semi-transparent background */
+    padding: 30px 40px; /* Vertical and horizontal padding */
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 480px; /* Max width for the login box */
+    color: #e0e0e0; /* Default light text color inside the box */
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    .login-container h4 {
+        color: #ffffff;
+        text-align: center;
+        margin-top: 0; /* Remove default margin if any */
+        margin-bottom: 35px;
+        font-weight: 400; /* Lighter font weight for title */
+        font-size: 2rem; /* Larger title */
+    }
+
+    /* Materialize Input Field Overrides for dark theme */
+    .login-container .input-field label {
+        color: #a0b0c0; /* Light blue-grey for labels */
+    }
+
+    .login-container .input-field input[type=email]:not(.browser-default),
+    .login-container .input-field input[type=password]:not(.browser-default) {
+        border-bottom: 1px solid #506070; /* Darker underline for inputs */
+        color: #ffffff; /* White input text */
+        font-size: 1.1rem; /* Slightly larger input text */
+    }
+
+    .login-container .input-field input:-webkit-autofill,
+    .login-container .input-field input:-webkit-autofill:hover,
+    .login-container .input-field input:-webkit-autofill:focus,
+    .login-container .input-field input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px rgba(10, 25, 40, 0.85) inset !important; /* Match container bg */
+        -webkit-text-fill-color: #ffffff !important; /* White text for autofill */
+        border-bottom: 1px solid #506070 !important; /* Ensure border stays */
+    }
+
+
+    .login-container .input-field input[type=email]:not(.browser-default):focus:not([readonly]),
+    .login-container .input-field input[type=password]:not(.browser-default):focus:not([readonly]) {
+        border-bottom: 1px solid #009688; /* Materialize teal for focus underline */
+        box-shadow: 0 1px 0 0 #009688;
+        color: #ffffff;
+    }
+
+        .login-container .input-field input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+        .login-container .input-field input[type=password]:not(.browser-default):focus:not([readonly]) + label {
+            color: #009688 !important; /* Teal for active label */
+        }
+
+    .login-container .input-field .helper-text.text-danger { /* Specifically target validation messages */
+        color: #ffab91 !important; /* Lighter, less harsh red for errors on dark bg */
+        font-size: 0.85rem;
+    }
+
+    .login-container .input-field .helper-text[data-success="right"] {
+        color: #81c784 !important; /* Green for success (if used) */
+    }
+
+
+    /* Validation summary and errors on dark background */
+    .login-container .text-danger[role="alert"] ul, /* Target the validation summary ul */
+    .login-container .text-danger[role="alert"] { /* Target summary div if no ul */
+        color: #ffccbc !important; /* Light peach for error text */
+        background-color: rgba(255, 82, 82, 0.15); /* Faint red background for summary box */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border-left: 4px solid #e57373; /* Error accent border */
+    }
+
+        .login-container .text-danger[role="alert"] ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+
+    /* Checkbox */
+    .login-container [type="checkbox"].filled-in:checked + span:not(.lever):after {
+        border: 2px solid #009688; /* Teal checkmark */
+        background-color: #009688;
+    }
+
+    .login-container label span { /* Text for checkbox */
+        color: #c0d0e0; /* Light text for checkbox label */
+        font-size: 0.95rem;
+    }
+
+
+    /* Button styling */
+    .login-container .btn {
+        background-color: #007bff; /* Primary blue */
+        width: 100%;
+        height: 50px; /* Taller button */
+        line-height: 50px;
+        margin-top: 25px; /* More space above button */
+        border-radius: 6px; /* Slightly more rounded */
+        text-transform: uppercase; /* Uppercase button text */
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .login-container .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+
+        .login-container .btn i.material-icons {
+            line-height: 50px; /* Match button height */
+        }
+
+    /* Links */
+    .login-container p a {
+        color: #82b1ff; /* Brighter light blue for links */
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .login-container p a:hover {
+            color: #bbdefb; /* Lighter blue on hover */
+            text-decoration: underline;
+        }
+
+    /* External Logins section */
+    .login-container .external-login-title {
+        text-align: center;
+        color: #90a0b0; /* Muted text for "Or sign in with" */
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 0.95em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .login-container .divider {
+        background-color: rgba(120, 144, 156, 0.3); /* Muted divider */
+        margin-bottom: 25px;
+    }
+
+    .login-container .external-login-form .btn.btndefault {
+        background-color: rgba(255, 255, 255, 0.1); /* Very subtle light background for external login buttons */
+        color: #d0e0f0; /* Light text */
+        width: 100%;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        text-transform: none;
+        font-weight: 500;
+        height: 45px;
+        line-height: 45px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+        .login-container .external-login-form .btn.btndefault:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+    /* Ensure Materialize validation messages are styled as per your general CSS if these are more specific */
+    .login-container .input-field .input-validation-error { /* From your general CSS, adapted */
+        border-bottom: 1px solid #FF8A80 !important; /* Pinkish-red for error */
+        box-shadow: 0 1px 0 0 #FF8A80 !important;
+    }
+
+    .login-container .input-field input.valid { /* From your general CSS, adapted */
+        border-bottom: 1px solid #81C784 !important; /* Green for valid */
+        box-shadow: 0 1px 0 0 #81C784 !important;
+    }
+
+    .login-container .field-validation-error { /* From your general CSS, adapted for dark */
+        color: #FFAB91 !important; /* Lighter red for field validation messages */
+        font-size: 0.85rem;
+        display: block;
+    }
+
+@media only screen and (min-width: 993px) { /* Áp dụng cho màn hình lớn hơn hoặc bằng 993px */
+    header.secureLayout > nav.top-nav, /* Nhắm vào top-nav bên trong header */
+    main.secureLayout,
+    footer.page-footer.secureLayout {
+        padding-left: 300px; /* Độ rộng mặc định của sidenav-fixed là 300px */
+    }
+}

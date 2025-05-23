@@ -1,0 +1,350 @@
+﻿@using ASC_Web.Areas.Configuration.Models
+@model MasterValuesViewModel
+@{
+    Layout = "_SecureLayout";
+    ViewData["Title"] = "Quản lý Master Values";
+}
+
+<style>
+    /* CSS cho các nút thao tác trong bảng Master Values */
+    #tblMasterValues th.actions-header,
+    #tblMasterValues td.actions-cell {
+        min-width: 120px; /* Điều chỉnh độ rộng tối thiểu cho cột hành động */
+        text-align: center !important; /* Đảm bảo căn giữa */
+        vertical-align: middle;
+    }
+
+        #tblMasterValues td.actions-cell .btn-floating.btn-small {
+            margin: 0 5px; /* Khoảng cách giữa các nút Sửa/Xóa */
+        }
+
+    /* CSS cho status badge */
+    #tblMasterValues .badge {
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: white !important; /* Đảm bảo chữ trắng trên nền màu */
+        border-radius: 3px;
+        padding: 0 10px;
+        line-height: 22px; /* Điều chỉnh cho phù hợp với chiều cao badge */
+        height: 22px;
+    }
+
+        #tblMasterValues .badge.green {
+            background-color: #66bb6a !important; /* green lighten-1 */
+        }
+
+        #tblMasterValues .badge.red {
+            background-color: #ef5350 !important; /* red lighten-1 */
+        }
+
+    /* CSS chung cho bảng DataTable */
+    .dataTables_length, .dataTables_filter {
+        margin-bottom: 15px;
+    }
+
+    .dataTables_info, .dataTables_paginate {
+        margin-top: 15px;
+    }
+
+    div.dataTables_wrapper div.dataTables_length select {
+        width: auto;
+        display: inline-block;
+        height: auto;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    /* Các class padding đã có trong code của bạn */
+    .padding-top-20px {
+        padding-top: 20px;
+    }
+
+    .padding-left-20px {
+        padding-left: 20px;
+    }
+
+    .padding-right-20px {
+        padding-right: 20px;
+    }
+
+    .padding-left-10px {
+        padding-left: 10px;
+    }
+
+    .padding-bottom-15px {
+        padding-bottom: 15px;
+    }
+
+    .padding-top-10px {
+        padding-top: 10px;
+    }
+
+    .padding-10px {
+        padding: 10px;
+    }
+
+    .padding-0px {
+        padding: 0px;
+    }
+
+</style>
+
+<div class="row"></div>
+<div class="row padding-top-20px padding-left-20px padding-right-20px">
+    <div class="row z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>@ViewData["Title"] @(string.IsNullOrEmpty(Model.SelectedMasterDataKeyName) ? "" : $"- ({Model.SelectedMasterDataKeyName})") </h5>
+        </div>
+        <div class="divider"></div>
+
+        @* Phần chọn Master Key *@
+        <div class="col s12 padding-bottom-15px padding-top-10px">
+            <div class="row">
+                <form asp-action="MasterValues" method="get" id="formSelectMasterKey" class="col s12">
+                    <div class="input-field">
+                        <i class="material-icons prefix">category</i>
+                        <select asp-for="SelectedMasterDataKeyId" asp-items="@(ViewBag.MasterKeysSelectList as SelectList)" id="ddlMasterKeys">
+                            <option value="">-- Chọn Master Key --</option>
+                        </select>
+                        <label asp-for="SelectedMasterDataKeyId">Chọn Key Chính</label>
+                        <span asp-validation-for="SelectedMasterDataKeyId" class="helper-text red-text"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @* Thông báo chung từ TempData *@
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel green lighten-2 white-text text-darken-2 padding-10px">@TempData["SuccessMessage"]</div>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel red lighten-2 white-text text-darken-2 padding-10px">@TempData["ErrorMessage"]</div>
+            </div>
+        }
+        @if (TempData["InfoMessage"] != null)
+        {
+            <div class="col s12">
+                <div class="card-panel blue lighten-2 white-text text-darken-2 padding-10px">@TempData["InfoMessage"]</div>
+            </div>
+        }
+
+        @* Hiển thị lỗi validation tổng quát từ ModelState (nếu có) *@
+        @if (!ViewData.ModelState.IsValid && ViewData.ModelState.Values.Any(v => v.Errors.Any()))
+        {
+            <div class="col s12">
+                <div class="card-panel red lighten-3 black-text padding-10px">
+                    <span style="font-weight: bold;">Vui lòng sửa các lỗi sau:</span>
+                    <ul style="margin-left: 20px; list-style-type: disc;">
+                        @foreach (var modelStateEntry in ViewData.ModelState.Values)
+                        {
+                            foreach (var error in modelStateEntry.Errors)
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+
+        @* Bảng hiển thị Master Values *@
+        <div class="col s12 padding-bottom-15px">
+            @if (Model.SelectedMasterDataKeyId != Guid.Empty)
+            {
+                @if (Model.MasterValues != null && Model.MasterValues.Any())
+                {
+                    <table class="highlight centered responsive-table" id="tblMasterValues">
+                        <thead>
+                            <tr>
+                                <th>Tên Giá trị</th>
+                                <th>Trạng thái</th>
+                                @* Thêm class 'actions-header' vào đây *@
+                                <th class="actions-header">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var masterValue in Model.MasterValues)
+                            {
+                                <tr>
+                                    <td>@masterValue.Name</td>
+                                    <td>
+                                        @if (masterValue.IsActive)
+                                        {
+                                            <span class="new badge green white-text" data-badge-caption="">Hoạt động</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="new badge red white-text" data-badge-caption="">Không HĐ</span>
+                                        }
+                                    </td>
+                                    @* Thêm class 'actions-cell' vào đây *@
+                                    <td class="actions-cell">
+                                        <a asp-action="EditMasterValue" asp-route-id="@masterValue.Id" asp-route-masterKeyId="@Model.SelectedMasterDataKeyId" class="btn-floating btn-small waves-effect waves-light blue tooltipped" data-position="top" data-tooltip="Sửa">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                        <form asp-action="DeleteMasterValue" asp-route-id="@masterValue.Id" asp-route-masterKeyIdRedirect="@Model.SelectedMasterDataKeyId" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa Master Value này?');">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="top" data-tooltip="Xóa">
+                                                <i class="material-icons">delete</i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="center-align padding-top-10px">Không có Master Value nào cho Master Key <strong class="blue-text text-darken-2">@Model.SelectedMasterDataKeyName</strong>. Bạn có thể thêm mới bên dưới.</p>
+                }
+            }
+            else
+            {
+                <p class="center-align padding-top-10px">Vui lòng chọn một Master Key để xem và quản lý các giá trị.</p>
+            }
+        </div>
+    </div>
+
+    <div class="row"></div>
+
+    @* Form Thêm mới / Chỉnh sửa Master Value (chỉ hiển thị nếu đã chọn Master Key) *@
+    @if (Model.SelectedMasterDataKeyId != Guid.Empty)
+    {
+        <div class="row z-depth-3">
+            <div class="col s12 padding-0px">
+                <div class="section white-text padding-left-10px @(Model.IsEdit ? "orange" : "blue-grey") lighten-1">
+                    <h5>@(Model.IsEdit ? $"Chỉnh sửa Master Value (Thuộc Key: {Model.SelectedMasterDataKeyName})" : $"Thêm mới Master Value cho '{Model.SelectedMasterDataKeyName}'")</h5>
+                </div>
+                <div class="divider"></div>
+
+                <form asp-controller="MasterData" asp-action="CreateOrEditMasterValue" method="post" class="col s12 padding-top-10px" id="formMasterValue">
+                    @Html.AntiForgeryToken()
+
+                    <input type="hidden" asp-for="IsEdit" />
+                    <input type="hidden" asp-for="SelectedMasterDataKeyId" />
+
+                    @if (Model.IsEdit)
+                    {
+                        <input type="hidden" asp-for="MasterValueInContext.Id" />
+                        <input type="hidden" asp-for="MasterValueInContext.MasterDataKeyId" />
+                    }
+                    else
+                    {
+                        <input type="hidden" asp-for="MasterValueInContext.MasterDataKeyId" value="@Model.SelectedMasterDataKeyId" />
+                    }
+
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">list_alt</i>
+                            <input asp-for="MasterValueInContext.Name" id="MasterValueInContext_Name" class="validate" required />
+                            <label asp-for="MasterValueInContext.Name">Tên Giá trị</label>
+                            <span asp-validation-for="MasterValueInContext.Name" class="helper-text red-text"></span>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <div class="switch" style="padding-top:25px;">
+                                <label>
+                                    Không hoạt động
+                                    <input asp-for="MasterValueInContext.IsActive" />
+                                    <span class="lever"></span>
+                                    Hoạt động
+                                </label>
+                            </div>
+                            <span asp-validation-for="MasterValueInContext.IsActive" class="helper-text red-text"></span>
+                        </div>
+                    </div>
+
+                    @if (Model.IsEdit)
+                    {
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">category</i>
+                                <input type="text" id="MasterValueInContext_ParentKeyName_Display" value="@Model.SelectedMasterDataKeyName" disabled readonly />
+                                <label for="MasterValueInContext_ParentKeyName_Display" class="active">Thuộc Key Chính</label>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="input-field col s12 right-align">
+                            <button class="btn waves-effect waves-light btnSubmit" type="submit" name="action">
+                                @(Model.IsEdit ? "Lưu thay đổi" : "Tạo mới")
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <a asp-action="MasterValues" asp-route-SelectedMasterDataKeyId="@Model.SelectedMasterDataKeyId" class="btn waves-effect waves-light red lighten-1">
+                                Hủy
+                                <i class="material-icons right">cancel</i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $('select:not(.browser-default)').formSelect(); // Khởi tạo cho các select không phải của datatable
+            $('.tooltipped').tooltip();
+            M.updateTextFields();
+
+            $('#ddlMasterKeys').on('change', function () {
+                var selectedKeyId = $(this).val();
+                if (selectedKeyId) {
+                    window.location.href = '@Url.Action("MasterValues", "MasterData", new { Area = "Configuration" })?SelectedMasterDataKeyId=' + selectedKeyId;
+                } else {
+                     window.location.href = '@Url.Action("MasterValues", "MasterData", new { Area = "Configuration" })';
+                }
+            });
+
+            if ($('#tblMasterValues tbody tr').length > 0) {
+                 $('#tblMasterValues').DataTable({
+                    'pageLength': 5,
+                    'lengthMenu': [[5, 10, 25, -1], [5, 10, 25, 'Tất cả']],
+                     "language": {
+                        "lengthMenu": "Hiển thị _MENU_ mục",
+                        "zeroRecords": "Không tìm thấy dữ liệu",
+                        "info": "Hiển thị trang _PAGE_ trên _PAGES_",
+                        "infoEmpty": "Không có mục nào",
+                        "infoFiltered": "(lọc từ _MAX_ tổng số mục)",
+                        "search": "Tìm kiếm:",
+                        "paginate": {
+                            "first": "Đầu",
+                            "last": "Cuối",
+                            "next": "Tiếp",
+                            "previous": "Trước"
+                        }
+                    },
+                    "columnDefs": [
+                        { "orderable": false, "targets": 2 } // Cột hành động (index 2)
+                    ],
+                    responsive: true,
+                    "drawCallback": function( settings ) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 }); // Khởi tạo lại tooltips
+                    },
+                    "initComplete": function(settings, json) {
+                        $('div.dataTables_wrapper div.dataTables_length select').addClass('browser-default');
+                    }
+                });
+            }
+
+        @if (TempData["SuccessMessage"] != null || TempData["ErrorMessage"] != null || TempData["InfoMessage"] != null)
+        {
+            <text>
+                    setTimeout(function() {
+                        $('.card-panel.green, .card-panel.red, .card-panel.blue').fadeOut('slow', function() { $(this).remove(); });
+                    }, 3500);
+            </text>
+        }
+        });
+    </script>
+}

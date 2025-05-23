@@ -1,0 +1,295 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Đăng ký tài khoản";
+    // Giả sử Layout này đã có Materialize CSS và JS
+    // Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2; /* Màu nền chung */
+    }
+
+    .register-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #f2f2f2;
+        min-height: 100vh; /* Để section chiếm toàn bộ chiều cao viewport */
+        box-sizing: border-box;
+    }
+
+    .register-card {
+        width: 100%;
+        max-width: 550px; /* Card có thể rộng hơn login một chút */
+        background-color: white;
+        padding: 35px 40px;
+        border-radius: 8px;
+        box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    }
+
+        .register-card .card-title-custom {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+            .register-card .card-title-custom .material-icons {
+                margin-right: 10px;
+                font-size: 2.2rem;
+                color: #4caf50; /* Màu green cho đăng ký */
+            }
+
+        .register-card .divider {
+            margin: 25px 0;
+        }
+
+    .validation-summary-errors-register { /* Class mới cho validation summary */
+        background-color: #ffebee; /* red lighten-5 */
+        border: 1px solid #ef9a9a; /* red lighten-3 */
+        color: #c62828; /* red darken-3 */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+        .validation-summary-errors-register ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .validation-summary-errors-register li {
+            list-style-type: disc;
+        }
+
+    .register-card .input-field {
+        margin-bottom: 28px;
+    }
+
+    .input-field .prefix.active {
+        color: #4caf50; /* Màu green khi active */
+    }
+
+    .input-field .helper-text[data-error]::after { /* Hiển thị lỗi của Materialize */
+        font-size: 0.85rem;
+    }
+
+
+    .btn-register { /* Class cho nút Đăng ký chính */
+        width: 100%;
+        background-color: #43a047; /* green darken-1 */
+        color: white;
+        padding: 0 25px;
+        line-height: 48px;
+        height: 48px;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        margin-top: 10px; /* Thêm margin top */
+    }
+
+        .btn-register:hover {
+            background-color: #388e3c; /* green darken-2 */
+        }
+
+        .btn-register .material-icons {
+            line-height: 48px;
+        }
+
+    .external-logins-section {
+        margin-top: 25px;
+    }
+
+        .external-logins-section h6 {
+            font-size: 1rem;
+            color: #757575;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+    .btn-provider-register { /* Style cho nút đăng nhập bên ngoài */
+        width: 100%;
+        margin-bottom: 12px;
+        text-transform: none;
+        font-size: 0.95rem;
+        padding: 0 15px;
+        line-height: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+
+        .btn-provider-register:hover {
+            box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+        }
+
+        .btn-provider-register .material-icons {
+            margin-right: 12px;
+            line-height: 42px;
+        }
+
+    .btn-google-register {
+        background-color: #db4437 !important;
+        color: white !important;
+    }
+
+        .btn-google-register:hover {
+            background-color: #c23321 !important;
+        }
+
+    .btn-other-provider-register {
+        background-color: #fff !important;
+        color: #555 !important;
+        border: 1px solid #ddd;
+    }
+
+        .btn-other-provider-register:hover {
+            background-color: #f9f9f9 !important;
+        }
+
+    .login-link-container { /* Container cho link quay lại đăng nhập */
+        margin-top: 25px;
+        text-align: center;
+    }
+
+        .login-link-container a {
+            color: #1e88e5; /* blue darken-1 */
+            font-size: 0.9rem;
+        }
+
+            .login-link-container a:hover {
+                color: #0d47a1; /* blue darken-4 */
+            }
+
+</style>
+
+<section class="register-section">
+    <div class="register-card z-depth-2">
+        @* Thêm z-depth cho Materialize shadow *@
+        <h5 class="card-title-custom">
+            <i class="material-icons">person_add</i>@ViewData["Title"]
+        </h5>
+        <div class="divider"></div>
+
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            @* Chuyển validation summary sang Materialize style *@
+            <div asp-validation-summary="ModelOnly" class="validation-summary-errors-register" role="alert"></div>
+
+            <div class="row">
+                @* Bọc input fields trong .row để sử dụng .col s12 *@
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input asp-for="Input.Email" id="email" type="email" class="validate" autocomplete="email" aria-required="true" />
+                    <label asp-for="Input.Email" for="email">Địa chỉ Email</label>
+                    <span asp-validation-for="Input.Email" class="helper-text" data-error="Email không hợp lệ hoặc đã được sử dụng."></span>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock</i>
+                    <input asp-for="Input.Password" id="password" type="password" class="validate" autocomplete="new-password" aria-required="true" />
+                    <label asp-for="Input.Password" for="password">Mật khẩu</label>
+                    <span asp-validation-for="Input.Password" class="helper-text" data-error="Mật khẩu không hợp lệ (ít nhất 6 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt)."></span>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <input asp-for="Input.ConfirmPassword" id="confirmPassword" type="password" class="validate" autocomplete="new-password" aria-required="true" />
+                    <label asp-for="Input.ConfirmPassword" for="confirmPassword">Xác nhận Mật khẩu</label>
+                    <span asp-validation-for="Input.ConfirmPassword" class="helper-text" data-error="Mật khẩu xác nhận không khớp."></span>
+                </div>
+            </div>
+
+            <button id="registerSubmit" type="submit" class="btn waves-effect waves-light btn-register">
+                Đăng ký
+                <i class="material-icons right">how_to_reg</i>
+            </button>
+        </form>
+
+        <div class="login-link-container">
+            <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Đã có tài khoản? Đăng nhập</a>
+        </div>
+
+        @if ((Model.ExternalLogins?.Count ?? 0) > 0)
+        {
+            <div class="divider"></div>
+            <section class="external-logins-section">
+                <h6>Hoặc đăng ký với dịch vụ khác:</h6>
+                <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <div>
+                        @foreach (var provider in Model.ExternalLogins!)
+                        {
+                            string btnSpecificClass = "";
+                            string iconName = "login";
+                            string providerDisplayName = provider.DisplayName;
+
+                            if (provider.Name.Equals("Google", StringComparison.OrdinalIgnoreCase))
+                            {
+                                btnSpecificClass = "btn-google-register";
+                                iconName = "account_circle";
+                            }
+                            // Thêm các 'else if' cho các provider khác nếu cần
+                            // else if (provider.Name.Equals("Facebook", StringComparison.OrdinalIgnoreCase))
+                            // {
+                            //     btnSpecificClass = "blue darken-3 white-text"; // Ví dụ
+                            //     iconName = "facebook";
+                            // }
+                            else
+                            {
+                                btnSpecificClass = "btn-other-provider-register";
+                            }
+                            <button type="submit" class="btn waves-effect waves-light btn-provider-register @btnSpecificClass" name="provider" value="@provider.Name" title="Đăng ký bằng tài khoản @provider.DisplayName của bạn">
+                                <i class="material-icons left">@iconName</i> @providerDisplayName
+                            </button>
+                        }
+                    </div>
+                </form>
+            </section>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // M.updateTextFields(); // Cần thiết nếu label không float đúng cách sau khi load
+            // Hoặc khi có giá trị được điền sẵn (ví dụ khi quay lại trang sau lỗi)
+            $('input[autocomplete="email"], input[autocomplete="new-password"]').each(function() {
+                if ($(this).val()) {
+                    $(this).siblings('label').addClass('active');
+                }
+            });
+
+
+            var validationSummary = $('.validation-summary-errors-register');
+            if (validationSummary.length > 0) {
+                if (validationSummary.find('ul li').length === 0 && validationSummary.text().trim() === "") {
+                    validationSummary.hide();
+                } else if (validationSummary.find('ul li').length > 0 && validationSummary.find('ul li:first').text().trim() === "") {
+                     // Trường hợp một số lỗi ModelState không có ErrorMessage cụ thể (hiếm)
+                    var allEmpty = true;
+                    validationSummary.find('ul li').each(function() {
+                        if ($(this).text().trim() !== "") {
+                            allEmpty = false;
+                            return false; // break loop
+                        }
+                    });
+                    if (allEmpty) validationSummary.hide();
+                }
+            }
+        });
+    </script>
+}

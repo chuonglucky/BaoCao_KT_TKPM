@@ -1,0 +1,96 @@
+﻿@using ASC_Web.Models
+@using System.Security.Claims
+@model NavigationMenu
+
+@if (Model != null && Model.MenuItems != null)
+{
+    @foreach (var menuItem in Model.MenuItems)
+    {
+        bool PPH_HasAccessToParent = menuItem.UserRoles == null || !menuItem.UserRoles.Any() || menuItem.UserRoles.Any(role => User.IsInRole(role.Trim()));
+
+        if (PPH_HasAccessToParent)
+        {
+            bool PPH_ShouldRenderParentAsCollapsible = menuItem.IsNested &&
+                                                 menuItem.NestedItems != null &&
+                                                 menuItem.NestedItems.Any(ni => ni.UserRoles == null || !ni.UserRoles.Any() || ni.UserRoles.Any(role => User.IsInRole(role.Trim())));
+
+            if (PPH_ShouldRenderParentAsCollapsible)
+            {
+                <li>
+                    <a class="collapsible-header waves-effect">
+                        @if (!string.IsNullOrEmpty(menuItem.MaterialIcon))
+                        {
+                            <i class="material-icons">@menuItem.MaterialIcon</i>
+                        }
+                        @menuItem.DisplayName
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            @foreach (var nestedItem in menuItem.NestedItems.Where(ni => ni.UserRoles == null || !ni.UserRoles.Any() || ni.UserRoles.Any(role => User.IsInRole(role.Trim()))))
+                            {
+                                var linkId = $"menuLink_p{menuItem.Sequence}_c{nestedItem.Sequence}";
+                                if (nestedItem.Link != null && nestedItem.Link.Equals("/Identity/Account/Logout", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    <li id="li_@linkId">
+                                        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="form_@linkId">
+                                            <a href="#" onclick="document.getElementById('form_@linkId').submit(); return false;" class="waves-effect">
+                                                @if (!string.IsNullOrEmpty(nestedItem.MaterialIcon))
+                                                {
+                                                    <i class="material-icons">@nestedItem.MaterialIcon</i>
+                                                }
+                                                @nestedItem.DisplayName
+                                            </a>
+                                        </form>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li id="li_@linkId">
+                                        <a href="@Url.Content(nestedItem.Link ?? "#!")" class="waves-effect">
+                                            @if (!string.IsNullOrEmpty(nestedItem.MaterialIcon))
+                                            {
+                                                <i class="material-icons">@nestedItem.MaterialIcon</i>
+                                            }
+                                            @nestedItem.DisplayName
+                                        </a>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </li>
+            }
+            else if (!menuItem.IsNested && !string.IsNullOrEmpty(menuItem.Link))
+            {
+                var linkId = $"menuLink_p{menuItem.Sequence}";
+                if (menuItem.Link.Equals("/Identity/Account/Logout", StringComparison.OrdinalIgnoreCase))
+                {
+                    <li id="li_@linkId">
+                        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="form_@linkId">
+                            <a href="#" onclick="document.getElementById('form_@linkId').submit(); return false;" class="waves-effect">
+                                @if (!string.IsNullOrEmpty(menuItem.MaterialIcon))
+                                {
+                                    <i class="material-icons">@menuItem.MaterialIcon</i>
+                                }
+                                @menuItem.DisplayName
+                            </a>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li id="li_@linkId">
+                        <a href="@Url.Content(menuItem.Link)" class="waves-effect">
+                            @if (!string.IsNullOrEmpty(menuItem.MaterialIcon))
+                            {
+                                <i class="material-icons">@menuItem.MaterialIcon</i>
+                            }
+                            @menuItem.DisplayName
+                        </a>
+                    </li>
+                }
+            }
+        }
+    }
+}
