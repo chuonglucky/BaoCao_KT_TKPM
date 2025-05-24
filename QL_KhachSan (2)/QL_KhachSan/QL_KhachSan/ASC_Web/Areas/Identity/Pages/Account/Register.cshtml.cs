@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using ASC.Model.BaseTypes;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -21,6 +22,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ASC_Web.Areas.Identity.Pages.Account
 {
+    [AllowAnonymous]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -45,60 +47,31 @@ namespace ASC_Web.Areas.Identity.Pages.Account
             _emailSender = emailSender;
         }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [BindProperty]
         public InputModel Input { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public string ReturnUrl { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public class InputModel
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Email là bắt buộc.")]
+            [EmailAddress(ErrorMessage = "Địa chỉ email không hợp lệ.")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "Mật khẩu là bắt buộc.")]
+            [StringLength(100, ErrorMessage = "{0} phải dài ít nhất {2} và tối đa {1} ký tự.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Mật khẩu")]
             public string Password { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Xác nhận mật khẩu")]
+            [Compare("Password", ErrorMessage = "Mật khẩu và mật khẩu xác nhận không khớp.")]
             public string ConfirmPassword { get; set; }
         }
-
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -108,7 +81,7 @@ namespace ASC_Web.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl ??= Url.Content("~/");
+            returnUrl ??= Url.Content("~/"); // Giá trị mặc định nếu returnUrl là null
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
@@ -120,7 +93,39 @@ namespace ASC_Web.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    _logger.LogInformation("Người dùng đã tạo tài khoản mới với mật khẩu.");
+
+                    var addToRoleResult = await _userManager.AddToRoleAsync(user, Roles.Customer.ToString());
+                    if (!addToRoleResult.Succeeded)
+                    {
+                        _logger.LogError($"Lỗi khi thêm người dùng {user.UserName} vào vai trò {Roles.Customer.ToString()}.");
+                        foreach (var error in addToRoleResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, $"Lỗi gán vai trò: {error.Description}");
+                        }
+                    }
+                    else
+                    {
+                        _logger.LogInformation($"Người dùng {user.UserName} đã được thêm vào vai trò {Roles.Customer.ToString()}.");
+                    }
+
+                    var isActiveClaimResult = await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("IsActive", "true"));
+                    if (!isActiveClaimResult.Succeeded)
+                    {
+                        _logger.LogError($"Lỗi khi thêm claim 'IsActive' cho người dùng {user.UserName}.");
+                        foreach (var error in isActiveClaimResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, $"Lỗi thêm claim: {error.Description}");
+                        }
+                    }
+
+                    if (!ModelState.IsValid)
+                    {
+                        // Cân nhắc xóa người dùng nếu không thể gán vai trò/claim.
+                        // await _userManager.DeleteAsync(user);
+                        // _logger.LogWarning($"Đã xóa người dùng {user.UserName} do không thể gán vai trò hoặc claim thiết yếu.");
+                        return Page();
+                    }
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -131,8 +136,8 @@ namespace ASC_Web.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    await _emailSender.SendEmailAsync(Input.Email, "Xác nhận email của bạn",
+                        $"Vui lòng xác nhận tài khoản của bạn bằng cách <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>nhấn vào đây</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -141,7 +146,8 @@ namespace ASC_Web.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        _logger.LogInformation($"Người dùng {user.UserName} đã đăng nhập và được chuyển hướng đến Dashboard.");
+                        return RedirectToAction("Dashboard", "Dashboard", new { area = "ServiceRequests" });
                     }
                 }
                 foreach (var error in result.Errors)
@@ -150,7 +156,6 @@ namespace ASC_Web.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return Page();
         }
 
@@ -162,9 +167,9 @@ namespace ASC_Web.Areas.Identity.Pages.Account
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
-                    $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                    $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
+                throw new InvalidOperationException($"Không thể tạo một thể hiện của '{nameof(IdentityUser)}'. " +
+                    $"Hãy đảm bảo rằng '{nameof(IdentityUser)}' không phải là một lớp trừu tượng và có một hàm khởi tạo không tham số, hoặc " +
+                    $"ghi đè trang đăng ký trong /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
@@ -172,7 +177,7 @@ namespace ASC_Web.Areas.Identity.Pages.Account
         {
             if (!_userManager.SupportsUserEmail)
             {
-                throw new NotSupportedException("The default UI requires a user store with email support.");
+                throw new NotSupportedException("Giao diện người dùng mặc định yêu cầu một user store có hỗ trợ email.");
             }
             return (IUserEmailStore<IdentityUser>)_userStore;
         }

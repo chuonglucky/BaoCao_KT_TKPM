@@ -94,3 +94,16 @@ D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\refint\ASC.Model.dll
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.pdb
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ref\ASC.Model.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\bin\Debug\net8.0\ASC.Model.deps.json
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\bin\Debug\net8.0\ASC.Model.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\bin\Debug\net8.0\ASC.Model.pdb
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.AssemblyReference.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfoInputs.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfo.cs
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.CoreCompileInputs.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.sourcelink.json
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\refint\ASC.Model.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ASC.Model.pdb
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Model\obj\Debug\net8.0\ref\ASC.Model.dll

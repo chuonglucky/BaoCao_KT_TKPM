@@ -94,3 +94,16 @@ D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\refint\ASC.Utilities.dll
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.pdb
 D:\báo cáo\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ref\ASC.Utilities.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.deps.json
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.pdb
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.csproj.AssemblyReference.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.AssemblyInfoInputs.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.AssemblyInfo.cs
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.csproj.CoreCompileInputs.cache
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.sourcelink.json
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\refint\ASC.Utilities.dll
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.pdb
+D:\báo cáo\BaoCao_KT_TKPM\QL_KhachSan (2)\QL_KhachSan\QL_KhachSan\ASC.Utilities\obj\Debug\net8.0\ref\ASC.Utilities.dll

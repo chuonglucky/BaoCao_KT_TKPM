@@ -227,7 +227,6 @@
                     </div>
                 }
 
-
                 <input type="hidden" asp-for="IsEdit" />
                 @if (Model.IsEdit)
                 {
@@ -239,7 +238,8 @@
                         <i class="material-icons prefix">label_important</i>
                         <input asp-for="MasterKeyInContext.Name" id="MasterKeyInContext_Name" class="validate" required />
                         <label asp-for="MasterKeyInContext.Name">Tên Danh mục Chính</label>
-                        <span asp-validation-for="MasterKeyInContext.Name" class="helper-text red-text" data-error-message="@Html.ValidationMessageFor(m => m.MasterKeyInContext.Name)"></span>
+                        @* CORRECTED LINE BELOW: Removed data-error-message attribute *@
+                        <span asp-validation-for="MasterKeyInContext.Name" class="helper-text red-text"></span>
                     </div>
 
                     <div class="input-field col s12 m4 l5">
@@ -277,7 +277,7 @@
             M.updateTextFields(); // For labels on pre-filled inputs
 
             // DataTable Initialization
-            if ($('#tblMasterKeys tbody tr').length > 0 || $('#tblMasterKeys tbody tr').length === 0 && $('#tblMasterKeys').length > 0) { // Init even if table is empty
+            if ($('#tblMasterKeys tbody tr').length > 0 || ($('#tblMasterKeys tbody tr').length === 0 && $('#tblMasterKeys').length > 0)) { // Init even if table is empty
                 $('#tblMasterKeys').DataTable({
                     'pageLength': 5,
                     'lengthMenu': [[5, 10, 25, 50, -1], [5, 10, 25, 50, 'Tất cả']],
@@ -294,10 +294,11 @@
                         { "orderable": false, "targets": 2 } // Disable sorting for Actions column
                     ],
                     responsive: true,
-                    "drawCallback": function(settings) {
-                        $('.tooltipped').tooltip({ exitDelay: 50 }); // Re-init tooltips
+                    "drawCallback": function (settings) {
+                        $('.tooltipped').tooltip({ exitDelay: 50 }); // Re-init tooltips after draw
                     },
-                    "initComplete": function(settings, json) {
+                    "initComplete": function (settings, json) {
+                        // Style DataTables elements to better match Materialize
                         $('div.dataTables_wrapper div.dataTables_length select').addClass('browser-default');
                         $('div.dataTables_wrapper div.dataTables_filter input[type="search"]').css({ 'height': 'auto', 'margin-left': '0.5em' });
                     }
@@ -305,16 +306,24 @@
             }
 
             // Auto-hide TempData messages
-            setTimeout(function() {
-                $('.card-panel.green, .card-panel.red').fadeOut('slow', function() { $(this).remove(); });
-            }, 4000); // Slightly longer display time
+            setTimeout(function () {
+                $('.card-panel.green, .card-panel.red').fadeOut('slow', function () { $(this).remove(); });
+            }, 4000); // Display time for messages
 
             // Logic to scroll to form if there are validation errors on POST
-            if ($('#formMasterKey .validation-summary-panel ul li').length > 0 || $('#formMasterKey .input-field .red-text:not(:empty)').length > 0) {
-                 // Check if IsEdit is true to determine form title context
-                var isEditMode = $('#IsEdit').val() === 'true';
-                var formTitle = isEditMode ? "Chỉnh sửa Danh mục Chính" : "Thêm mới Danh mục Chính";
-                 $('#formMasterKey').closest('.card').find('.card-title').html('<i class="material-icons">@(Model.IsEdit ? "edit_note" : "playlist_add")</i> ' + formTitle + ' <small class="red-text">(Có lỗi)</small>');
+            if ($('#formMasterKey .validation-summary-panel ul li').length > 0 || $('#formMasterKey .input-field .helper-text.red-text:not(:empty)').length > 0) {
+                // Check if IsEdit is true to determine form title context
+                // Ensure robust check for boolean string value
+                var isEditMode = ($('#IsEdit').val() || '').toLowerCase() === 'true';
+                var formTitleText = isEditMode ? "Chỉnh sửa Danh mục Chính" : "Thêm mới Danh mục Chính";
+
+                // The icon is determined server-side in the Razor template.
+                // We need to use the client-side isEditMode to select the correct icon string for the "(Có lỗi)" message.
+                var iconName = isEditMode ? "edit_note" : "playlist_add";
+
+                var formTitleHtml = '<i class="material-icons">' + iconName + '</i> ' + formTitleText + ' <small class="red-text">(Có lỗi)</small>';
+
+                $('#formMasterKey').closest('.card').find('.card-title').html(formTitleHtml);
 
                 $('html, body').animate({
                     scrollTop: $("#formMasterKey").offset().top - 70 // 70 for potential fixed navbar height

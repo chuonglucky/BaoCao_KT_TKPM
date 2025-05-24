@@ -1,353 +1,353 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\",
+  "WorkspaceRootPath": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\account\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\customerregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\navigation\\navigation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\navigation\\navigation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_securelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\shared\\_securelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\views\\booking\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\views\\booking\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\myrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\myrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\pendinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\pendinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\models\\createservicerequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\models\\createservicerequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\masterdata\\mastervalues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\masterdata\\mastervalues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\masterdata\\masterkeys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\masterdata\\masterkeys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\views\\adminbooking\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\views\\adminbooking\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\views\\adminbooking\\allbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\views\\adminbooking\\allbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\services\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\services\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\roomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\roomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\iroomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\iroomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\bookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\bookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\bookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\views\\adminbooking\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\views\\adminbooking\\pendingrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\views\\adminbooking\\allbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\views\\adminbooking\\allbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\ibookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\ibookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\admin\\controllers\\adminbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\views\\booking\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\views\\booking\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\booking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\booking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\servicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\ibookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\ibookingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\masterdata\\masterkeys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\masterdata\\masterkeys.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\myrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\myrequests.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\models\\createservicerequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\models\\createservicerequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\roomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\roomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\servicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\servicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\masterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\account\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\customerregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\customerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\navigation\\navigation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\navigation\\navigation.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_securelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\shared\\_securelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\servicerequest\\pendinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\servicerequest\\pendinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\controllers\\servicerequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\room\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\room\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\views\\masterdata\\mastervalues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\views\\masterdata\\mastervalues.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\services\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\services\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\iroomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\iroomoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\masterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\masterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\iservicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\iservicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\iservicerequestoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\imasterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.business\\interfaces\\imasterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7EF4382-8D6B-42CE-A21C-F5AAF3BF7667}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\interfaces\\imasterdataoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16B089A8-DFBB-4B93-8AFD-52029BD3D6EC}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\staffaccounts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\staffaccounts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\account\\staffaccounts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\profilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\profilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\profilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\basetypes\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\basetypes\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\models\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\iidentityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\iidentityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\iidentityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\controllers\\masterdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\controllers\\masterdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\controllers\\masterdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterdatavalueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterdatavalueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\models\\masterdatavalueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\mastervaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\mastervaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\models\\mastervaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\models\\masterkeysviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterdatakeyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\configuration\\models\\masterdatakeyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\configuration\\models\\masterdatakeyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\configuration\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\configuration\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\configuration\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\masterdatakey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\masterdatakey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\masterdatakey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\masterdatavalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc.model\\models\\masterdatavalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF1F4275-F753-4011-B20A-A1436BF40028}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\masterdatavalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\staffmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\staffregistrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\staffdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\staffdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\accounts\\models\\customerdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\accounts\\models\\customerdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\navigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\navigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\navigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\inavigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\inavigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\inavigationcacheoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\components\\leftnavigation\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\views\\shared\\components\\leftnavigation\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\views\\shared\\components\\leftnavigation\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\navigation\\leftnavigationviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\navigation\\leftnavigationviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\navigation\\leftnavigationviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\models\\navigationmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\models\\navigationmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\models\\navigationmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\servicerequests\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\servicerequests\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\areas\\identity\\pages\\account\\externallogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\migrations\\20250521134958_updateservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\migrations\\20250521134958_updateservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\migrations\\20250521134958_updateservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\migrations\\20250522123440_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|d:\\b\u00E1o c\u00E1o\\baocao_kt_tkpm\\ql_khachsan (2)\\ql_khachsan\\ql_khachsan\\asc_web\\data\\migrations\\20250522123440_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2BFC633-2FD5-4C32-80C7-13AB3E533AD4}|ASC_Web\\ASC_Web.csproj|solutionrelative:asc_web\\data\\migrations\\20250522123440_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -386,455 +386,218 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAiwA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T12:48:18.291Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAACQBAAAAAAAAAAAgwDkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T12:43:41.048Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\appsettings.json",
-              "RelativeDocumentMoniker": "ASC_Web\\appsettings.json",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\appsettings.json",
-              "RelativeToolTip": "ASC_Web\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-20T01:09:16.508Z",
+              "Title": "MyBookings.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAgwE0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T12:45:04.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AllBookings.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAgwAUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T12:54:38.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PendingRequests.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
+              "ViewState": "AgIAABcBAAAAAAAAAAAgwCwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T12:52:35.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\BookingOperations.cs",
+              "RelativeDocumentMoniker": "ASC.business\\BookingOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\BookingOperations.cs",
+              "RelativeToolTip": "ASC.business\\BookingOperations.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAQwPQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T13:36:43.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAANgAAAAAAAAAAAAgwCEBAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-21T15:14:06.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:51:31.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerRegistrationViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwDUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:52:28.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T18:51:15.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Customers.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
-              "ViewState": "AgIAAIcBAAAAAAAAAAAgwJABAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T18:58:01.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAswDcBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T01:13:55.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Navigation.json",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\Navigation.json",
-              "RelativeDocumentMoniker": "ASC_Web\\Navigation\\Navigation.json",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\Navigation.json",
-              "RelativeToolTip": "ASC_Web\\Navigation\\Navigation.json",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAAEQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-20T01:21:19.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_SecureLayout.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
-              "RelativeToolTip": "ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAcwEEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T01:23:12.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwDQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:38:31.66Z",
+              "WhenOpened": "2025-05-23T12:48:18.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MyBookings.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Views\\Booking\\MyBookings.cshtml",
-              "ViewState": "AgIAALoAAAAAAAAAAAAAAFQBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T12:45:04.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
-              "ViewState": "AgIAAOQAAAAAAAAAAAAAABEBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T13:10:12.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Views\\Booking\\Create.cshtml",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T12:43:41.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:10:21.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T13:47:08.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAYwJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:39:07.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
               "Title": "AdminBookingController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Admin\\Controllers\\AdminBookingController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowB4AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T12:51:57.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T11:39:35.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Models\\BookingViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:13:25.805Z"
+              "WhenOpened": "2025-05-22T12:38:31.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateServiceRequestViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswEIAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Booking\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAgwJ4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:32:36.687Z"
+              "WhenOpened": "2025-05-22T12:39:07.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ServiceRequestController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
-              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\Models\\Booking.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Booking.cs",
+              "RelativeToolTip": "ASC.Model\\Models\\Booking.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA8wCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T13:17:22.659Z"
+              "WhenOpened": "2025-05-22T12:31:11.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PendingList.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
-              "ViewState": "AgIAAKkBAAAAAAAAAAAswNABAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T13:59:03.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MyRequests.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
-              "ViewState": "AgIAALoAAAAAAAAAAAAswGUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T14:23:22.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAswA0BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T13:12:01.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MasterValues.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
-              "ViewState": "AgIAADYBAAAAAAAAAAAswF0BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T10:52:02.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MasterKeys.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
-              "ViewState": "AgIAAB0BAAAAAAAAAAAswEQBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T10:51:41.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PendingRequests.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\PendingRequests.cshtml",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAswCwBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T12:52:35.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AllBookings.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
-              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
-              "RelativeToolTip": "ASC_Web\\Areas\\Admin\\Views\\AdminBooking\\AllBookings.cshtml",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAswAUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T12:54:38.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\services\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "ASC_Web\\services\\DependencyInjection.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\services\\DependencyInjection.cs",
-              "RelativeToolTip": "ASC_Web\\services\\DependencyInjection.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswEUAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T01:10:04.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BookingOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\BookingOperations.cs",
-              "RelativeDocumentMoniker": "ASC.business\\BookingOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\BookingOperations.cs",
-              "RelativeToolTip": "ASC.business\\BookingOperations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:36:43.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IRoomOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IRoomOperations.cs",
-              "RelativeDocumentMoniker": "ASC.business\\interfaces\\IRoomOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IRoomOperations.cs",
-              "RelativeToolTip": "ASC.business\\interfaces\\IRoomOperations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:45:59.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RoomOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\RoomOperations.cs",
-              "RelativeDocumentMoniker": "ASC.business\\RoomOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\RoomOperations.cs",
-              "RelativeToolTip": "ASC.business\\RoomOperations.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:47:39.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Repository.cs",
-              "RelativeDocumentMoniker": "ASC.DataAccess\\Repository.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Repository.cs",
-              "RelativeToolTip": "ASC.DataAccess\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T09:53:46.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Irepository.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\Irepository.cs",
-              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\Irepository.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\Irepository.cs",
-              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\Irepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T09:53:58.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 11,
               "Title": "IBookingOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IBookingOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IBookingOperations.cs",
               "RelativeDocumentMoniker": "ASC.business\\interfaces\\IBookingOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IBookingOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IBookingOperations.cs",
               "RelativeToolTip": "ASC.business\\interfaces\\IBookingOperations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T13:36:15.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 12,
+              "Title": "MasterKeys.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterKeys.cshtml",
+              "ViewState": "AgIAADgBAAAAAAAAAAAgwE0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T10:51:41.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MyRequests.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\MyRequests.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T14:23:22.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateServiceRequestViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Models\\CreateServiceRequestViewModel.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAA6wCYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:32:36.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\Models\\Room.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Room.cs",
+              "RelativeToolTip": "ASC.Model\\Models\\Room.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwBsAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:20:06.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoomOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\RoomOperations.cs",
+              "RelativeDocumentMoniker": "ASC.business\\RoomOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\RoomOperations.cs",
+              "RelativeToolTip": "ASC.business\\RoomOperations.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T13:47:39.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ServiceRequestOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\ServiceRequestOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\ServiceRequestOperations.cs",
               "RelativeDocumentMoniker": "ASC.business\\ServiceRequestOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\ServiceRequestOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\ServiceRequestOperations.cs",
               "RelativeToolTip": "ASC.business\\ServiceRequestOperations.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAowH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -842,11 +605,263 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Controllers\\RoomController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:13:25.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Customers.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Customers.cshtml",
+              "ViewState": "AgIAAIcBAAAAAAAAAAAgwJYBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T18:58:01.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:51:15.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CustomerRegistrationViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\CustomerRegistrationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:52:28.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\CustomerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:51:31.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\appsettings.json",
+              "RelativeDocumentMoniker": "ASC_Web\\appsettings.json",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\appsettings.json",
+              "RelativeToolTip": "ASC_Web\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T01:09:16.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAswDcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T01:13:55.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Navigation.json",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\Navigation.json",
+              "RelativeDocumentMoniker": "ASC_Web\\Navigation\\Navigation.json",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\Navigation.json",
+              "RelativeToolTip": "ASC_Web\\Navigation\\Navigation.json",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAEQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T01:21:19.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_SecureLayout.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
+              "RelativeToolTip": "ASC_Web\\Views\\Shared\\_SecureLayout.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAcwEEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T01:23:12.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAABEBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T13:10:12.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T15:10:21.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T13:47:08.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T11:39:35.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ServiceRequestController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
+              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\ServiceRequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:17:22.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PendingList.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\ServiceRequest\\PendingList.cshtml",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAswNABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T13:59:03.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Room\\Views\\Rooms\\Details.cshtml",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAswA0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T13:12:01.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MasterValues.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
+              "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
+              "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Views\\MasterData\\MasterValues.cshtml",
+              "ViewState": "AgIAADYBAAAAAAAAAAAswF0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T10:52:02.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\services\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ASC_Web\\services\\DependencyInjection.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\services\\DependencyInjection.cs",
+              "RelativeToolTip": "ASC_Web\\services\\DependencyInjection.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswEUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T01:10:04.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IRoomOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IRoomOperations.cs",
+              "RelativeDocumentMoniker": "ASC.business\\interfaces\\IRoomOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IRoomOperations.cs",
+              "RelativeToolTip": "ASC.business\\interfaces\\IRoomOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T13:45:59.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Repository.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Repository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T09:53:46.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Irepository.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T09:53:58.265Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 39,
               "Title": "MasterDataOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\MasterDataOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\MasterDataOperations.cs",
               "RelativeDocumentMoniker": "ASC.business\\MasterDataOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\MasterDataOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\MasterDataOperations.cs",
               "RelativeToolTip": "ASC.business\\MasterDataOperations.cs",
               "ViewState": "AgIAAO4AAAAAAAAAAAAowBQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -856,9 +871,9 @@
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "IServiceRequestOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IServiceRequestOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IServiceRequestOperations.cs",
               "RelativeDocumentMoniker": "ASC.business\\interfaces\\IServiceRequestOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IServiceRequestOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IServiceRequestOperations.cs",
               "RelativeToolTip": "ASC.business\\interfaces\\IServiceRequestOperations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -866,35 +881,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "ASC.Model\\Models\\Booking.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Booking.cs",
-              "RelativeToolTip": "ASC.Model\\Models\\Booking.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:31:11.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Room.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "ASC.Model\\Models\\Room.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\Room.cs",
-              "RelativeToolTip": "ASC.Model\\Models\\Room.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T11:20:06.922Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 41,
               "Title": "IMasterDataOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IMasterDataOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IMasterDataOperations.cs",
               "RelativeDocumentMoniker": "ASC.business\\interfaces\\IMasterDataOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IMasterDataOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.business\\interfaces\\IMasterDataOperations.cs",
               "RelativeToolTip": "ASC.business\\interfaces\\IMasterDataOperations.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAUwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -904,9 +895,9 @@
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\UnitOfWork.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "ASC.DataAccess\\UnitOfWork.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\UnitOfWork.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\UnitOfWork.cs",
               "RelativeToolTip": "ASC.DataAccess\\UnitOfWork.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAA3wDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -916,9 +907,9 @@
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "IunitOfWork.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
               "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
               "RelativeToolTip": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -928,9 +919,9 @@
               "$type": "Document",
               "DocumentIndex": 44,
               "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ASC_Web\\ScaffoldingReadMe.txt",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\ScaffoldingReadMe.txt",
               "RelativeToolTip": "ASC_Web\\ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -940,9 +931,9 @@
               "$type": "Document",
               "DocumentIndex": 86,
               "Title": "20250522123440_update.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
               "RelativeToolTip": "ASC_Web\\Data\\Migrations\\20250522123440_update.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -952,9 +943,9 @@
               "$type": "Document",
               "DocumentIndex": 45,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "ASC_Web\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAswFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -964,9 +955,9 @@
               "$type": "Document",
               "DocumentIndex": 46,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -976,9 +967,9 @@
               "$type": "Document",
               "DocumentIndex": 47,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\Profile\\Index.cshtml",
               "ViewState": "AgIAAFABAAAAAAAAAAAswHcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -988,9 +979,9 @@
               "$type": "Document",
               "DocumentIndex": 48,
               "Title": "ProfileController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAAKwAAAAAAAAAAAAswMsAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1000,9 +991,9 @@
               "$type": "Document",
               "DocumentIndex": 49,
               "Title": "ProfileViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\ProfileViewModel.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1012,9 +1003,9 @@
               "$type": "Document",
               "DocumentIndex": 52,
               "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "ViewState": "AgIAAJYAAAAAAAAAAAAswL0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1024,9 +1015,9 @@
               "$type": "Document",
               "DocumentIndex": 50,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ASC_Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAPAAAAAAAAAAAAAvwMsAAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1036,9 +1027,9 @@
               "$type": "Document",
               "DocumentIndex": 51,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ASC_Web\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1048,9 +1039,9 @@
               "$type": "Document",
               "DocumentIndex": 53,
               "Title": "StaffAccounts.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\Account\\StaffAccounts.cshtml",
               "ViewState": "AgIAANsBAAAAAAAAAAAswAICAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1060,9 +1051,9 @@
               "$type": "Document",
               "DocumentIndex": 54,
               "Title": "DashboardController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1072,9 +1063,9 @@
               "$type": "Document",
               "DocumentIndex": 55,
               "Title": "ProfileModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\ProfileModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1084,9 +1075,9 @@
               "$type": "Document",
               "DocumentIndex": 56,
               "Title": "Constants.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\BaseTypes\\Constants.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\BaseTypes\\Constants.cs",
               "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\Constants.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\BaseTypes\\Constants.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\BaseTypes\\Constants.cs",
               "RelativeToolTip": "ASC.Model\\BaseTypes\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1096,9 +1087,9 @@
               "$type": "Document",
               "DocumentIndex": 57,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Models\\MappingProfile.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1108,9 +1099,9 @@
               "$type": "Document",
               "DocumentIndex": 85,
               "Title": "20250521134958_UpdateServiceRequest.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
               "RelativeToolTip": "ASC_Web\\Data\\Migrations\\20250521134958_UpdateServiceRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1120,9 +1111,9 @@
               "$type": "Document",
               "DocumentIndex": 58,
               "Title": "ServiceRequest.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\ServiceRequest.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\ServiceRequest.cs",
               "RelativeDocumentMoniker": "ASC.Model\\Models\\ServiceRequest.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\ServiceRequest.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\ServiceRequest.cs",
               "RelativeToolTip": "ASC.Model\\Models\\ServiceRequest.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA1wFUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1132,9 +1123,9 @@
               "$type": "Document",
               "DocumentIndex": 59,
               "Title": "IIdentitySeed.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IIdentitySeed.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IIdentitySeed.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\IIdentitySeed.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IIdentitySeed.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IIdentitySeed.cs",
               "RelativeToolTip": "ASC_Web\\Data\\IIdentitySeed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1144,9 +1135,9 @@
               "$type": "Document",
               "DocumentIndex": 60,
               "Title": "IdentitySeed.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IdentitySeed.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IdentitySeed.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\IdentitySeed.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IdentitySeed.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\IdentitySeed.cs",
               "RelativeToolTip": "ASC_Web\\Data\\IdentitySeed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1156,9 +1147,9 @@
               "$type": "Document",
               "DocumentIndex": 63,
               "Title": "MasterValuesViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Models\\MasterValuesViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1168,9 +1159,9 @@
               "$type": "Document",
               "DocumentIndex": 65,
               "Title": "MasterDataKeyViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Models\\MasterDataKeyViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1180,9 +1171,9 @@
               "$type": "Document",
               "DocumentIndex": 64,
               "Title": "MasterKeysViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Models\\MasterKeysViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1192,9 +1183,9 @@
               "$type": "Document",
               "DocumentIndex": 61,
               "Title": "MasterDataController.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Controllers\\MasterDataController.cs",
               "ViewState": "AgIAAMwAAAAAAAAAAAAcwPAAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1204,9 +1195,9 @@
               "$type": "Document",
               "DocumentIndex": 62,
               "Title": "MasterDataValueViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Configuration\\Models\\MasterDataValueViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1216,9 +1207,9 @@
               "$type": "Document",
               "DocumentIndex": 66,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1228,9 +1219,9 @@
               "$type": "Document",
               "DocumentIndex": 67,
               "Title": "ApplicationSettings.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Configuration\\ApplicationSettings.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Configuration\\ApplicationSettings.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Configuration\\ApplicationSettings.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Configuration\\ApplicationSettings.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Configuration\\ApplicationSettings.cs",
               "RelativeToolTip": "ASC_Web\\Configuration\\ApplicationSettings.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1240,9 +1231,9 @@
               "$type": "Document",
               "DocumentIndex": 68,
               "Title": "MasterDataKey.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataKey.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataKey.cs",
               "RelativeDocumentMoniker": "ASC.Model\\Models\\MasterDataKey.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataKey.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataKey.cs",
               "RelativeToolTip": "ASC.Model\\Models\\MasterDataKey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1252,9 +1243,9 @@
               "$type": "Document",
               "DocumentIndex": 69,
               "Title": "MasterDataValue.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataValue.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataValue.cs",
               "RelativeDocumentMoniker": "ASC.Model\\Models\\MasterDataValue.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataValue.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC.Model\\Models\\MasterDataValue.cs",
               "RelativeToolTip": "ASC.Model\\Models\\MasterDataValue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1264,9 +1255,9 @@
               "$type": "Document",
               "DocumentIndex": 72,
               "Title": "StaffRegistrationViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\StaffRegistrationViewModel.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA+wDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1276,9 +1267,9 @@
               "$type": "Document",
               "DocumentIndex": 70,
               "Title": "Profile.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Views\\Account\\Profile.cshtml",
               "ViewState": "AgIAAAoAAAAAAAAAAAAswCsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1288,9 +1279,9 @@
               "$type": "Document",
               "DocumentIndex": 71,
               "Title": "StaffManagementViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\StaffManagementViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1300,9 +1291,9 @@
               "$type": "Document",
               "DocumentIndex": 73,
               "Title": "StaffDisplayViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\StaffDisplayViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1312,9 +1303,9 @@
               "$type": "Document",
               "DocumentIndex": 74,
               "Title": "CustomerDisplayViewModel.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Accounts\\Models\\CustomerDisplayViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1324,9 +1315,9 @@
               "$type": "Document",
               "DocumentIndex": 75,
               "Title": "_MasterLayout.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
               "RelativeToolTip": "ASC_Web\\Views\\Shared\\_MasterLayout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1336,9 +1327,9 @@
               "$type": "Document",
               "DocumentIndex": 78,
               "Title": "InavigationCacheOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\InavigationCacheOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\InavigationCacheOperations.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\InavigationCacheOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\InavigationCacheOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\InavigationCacheOperations.cs",
               "RelativeToolTip": "ASC_Web\\Data\\InavigationCacheOperations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1348,9 +1339,9 @@
               "$type": "Document",
               "DocumentIndex": 77,
               "Title": "NavigationCacheOperations.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\NavigationCacheOperations.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\NavigationCacheOperations.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Data\\NavigationCacheOperations.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\NavigationCacheOperations.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Data\\NavigationCacheOperations.cs",
               "RelativeToolTip": "ASC_Web\\Data\\NavigationCacheOperations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1360,9 +1351,9 @@
               "$type": "Document",
               "DocumentIndex": 76,
               "Title": "site.css",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "ASC_Web\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\wwwroot\\css\\site.css",
               "RelativeToolTip": "ASC_Web\\wwwroot\\css\\site.css",
               "ViewState": "AgIAALgAAAAAAAAAAADwv8wAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -1372,9 +1363,9 @@
               "$type": "Document",
               "DocumentIndex": 79,
               "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
               "RelativeToolTip": "ASC_Web\\Views\\Shared\\Components\\LeftNavigation\\Default.cshtml",
               "ViewState": "AgIAAD0AAAAAAAAAAAAuwF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1384,9 +1375,9 @@
               "$type": "Document",
               "DocumentIndex": 80,
               "Title": "LeftNavigationViewComponent.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
               "RelativeToolTip": "ASC_Web\\Navigation\\LeftNavigationViewComponent.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1396,9 +1387,9 @@
               "$type": "Document",
               "DocumentIndex": 81,
               "Title": "NavigationModels.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Models\\NavigationModels.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Models\\NavigationModels.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Models\\NavigationModels.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Models\\NavigationModels.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Models\\NavigationModels.cs",
               "RelativeToolTip": "ASC_Web\\Models\\NavigationModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1408,9 +1399,9 @@
               "$type": "Document",
               "DocumentIndex": 82,
               "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\ServiceRequests\\Views\\Dashboard\\Dashboard.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -1420,9 +1411,9 @@
               "$type": "Document",
               "DocumentIndex": 83,
               "Title": "ExternalLogin.cshtml.cs",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
               "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAADgv4QAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1432,9 +1423,9 @@
               "$type": "Document",
               "DocumentIndex": 84,
               "Title": "ExternalLogin.cshtml",
-              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "DocumentMoniker": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
               "RelativeDocumentMoniker": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-              "ToolTip": "D:\\b\u00E1o c\u00E1o\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+              "ToolTip": "D:\\b\u00E1o c\u00E1o\\BaoCao_KT_TKPM\\QL_KhachSan (2)\\QL_KhachSan\\QL_KhachSan\\ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
               "RelativeToolTip": "ASC_Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
